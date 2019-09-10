@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>Place Suggestion</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+<style type="text/css">
+body{
+background-color: #f7f7f7;
+background-image: url("https://www.transparenttextures.com/patterns/light-mesh.png");
+}
+html, body { width:100%;padding:0;margin:0; }
+.container { width:90%;padding:1% 2%;margin:0 auto }
+#lat, #lon { text-align:left}
+#map { width:100%;height:50%;padding:0;margin:0; }
+.address { cursor:pointer }
+.address:hover { color:#AA0000 }
+</style>
+</head>
+<body>
+<div class="container">
+    <div id="back" align="left" class="back">
+        <a type="button" href="{% url 'userhome' %}" class="button">Back</a>
+    </div>
+<br />
+<b><h2>Drag the pin to the place you want to suggest...</h2></b>
+<div id="map"></div>
+<br />
+
+<b> Search By Location<br></b><br>
+<div id="search">
+<input type="text" name="addr" value="" id="addr" size="52" />&nbsp&nbsp&nbsp
+<button type="button" onclick="addr_search();" style="color: green">Search</button>
+<div id="results"></div>
+</div><br>
+
+<form action="{% url 'placesuggestion' %}" method='POST'>{% csrf_token %}
+<br><b><h2>Please fill the following informations</h2></b>
+    <table>
+<tr border='0'>
+<tr>
+<td>Latitude:</td> <td><input type="text" name="gps_x" id="lat" size=12 value="" required /></td>
+<td align="center">Longitude:</td> <td><input type="text" name="gps_y" id="lon" size=12 value="" required /></td>
+</tr>
+<tr>
+<td>Name:</td> <td><input type="text" name="name" id="Name" size=12 value="" required /></td>
+</tr>
+<tr>
+<td>Category:</td> <td><input type="text" name="category" id="category" size=12 value="" required /></td>
+</tr>
+<tr>
+<td>Opening Time:</td> <td><input type="text" name="opening_time" id="opening_time" size=12 value="0"/></td> <td>(24 hr)hh:mm:ss</td>
+</tr>
+<tr>
+<td>Closing Time:</td> <td><input type="text" name="closing_time" id="closing_time" size=12 value="0"/></td> <td>(24 hr)hh:mm:ss</td>
+</tr>
+<tr>
+<td>Offday:</td> <td><input type="text" name="offday" id="offday" size=12 value="0"/></td>
+</tr>
+<tr>
+<td>Sample Pic Url:</td> <td><input type="text" name="sample_pic" id="sample_pic" size=12 value="" required /></td>
+</tr></table>
+<br> <button style="color: green; height:30px; width:218px;">Suggest this place</button> </a></form>
+<br>
+</div>
+
+<script type="text/javascript">
+//Dhaka
+var startlat = 23.793083;
+var startlon = 90.413843;
+
+var options = {
+ center: [startlat, startlon],
+ zoom: 12
+}
+
+document.getElementById('lat').value = startlat;
+document.getElementById('lon').value = startlon;
+
+var map = L.map('map', options);
+var nzoom = 12;
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: 'OSM'}).addTo(map);
+
+var myMarker = L.marker([startlat, startlon], {title: "Coordinates", alt: "Coordinates", draggable: true}).addTo(map).on('dragend', function() {
+ var lat = myMarker.getLatLng().lat.toFixed(8);
+ var lon = myMarker.getLatLng().lng.toFixed(8);
+ var czoom = map.getZoom();
+ map.setView([lat,lon], czoom);
+ document.getElementById('lat').value = lat;
+ document.getElementById('lon').value = lon;
+// myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
+});
+
+function chooseAddr(lat1, lng1)
+{
+ myMarker.closePopup();
+ map.setView([lat1, lng1],14);
+ myMarker.setLatLng([lat1, lng1]);
+ lat = lat1.toFixed(8);
+ lon = lng1.toFixed(8);
+ document.getElementById('lat').value = lat;
+ document.getElementById('lon').value = lon;
+ //myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
+}
+
+function myFunction(arr)
+{
+ var out = "<br />";
+ var i;
+
+ if(arr.length > 0)
+ {
+  for(i = 0; i < arr.length; i++)
+  {
+   out += "<div class='address' title='Show Location and Coordinates' onclick='chooseAddr(" + arr[i].lat + ", " + arr[i].lon + ");return false;'>" + arr[i].display_name + "</div>";
+  }
+  out += "<br /> "
+  document.getElementById('results').innerHTML = out;
+ }
+ else
+ {
+  document.getElementById('results').innerHTML = "Sorry, no results...";
+ }
+
+}
+
+function addr_search()
+{
+ var inp = document.getElementById("addr");
+ var xmlhttp = new XMLHttpRequest();
+ var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + inp.value;
+ xmlhttp.onreadystatechange = function()
+ {
+   if (this.readyState == 4 && this.status == 200)
+   {
+    var myArr = JSON.parse(this.responseText);
+    myFunction(myArr);
+   }
+ };
+ xmlhttp.open("GET", url, true);
+ xmlhttp.send();
+}
+
+</script>
+
+</body>
+</html>

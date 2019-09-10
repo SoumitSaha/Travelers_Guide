@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Spectacular Places</title>
+	 <!-- <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'admin_inbox/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/vendor/perfect-scrollbar/perfect-scrollbar.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/css/main.css' %}">
+<!--===============================================================================================-->
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+
+	<style>
+		html, body { width:100%;background-color: #f7f7f7;
+background-image: url("https://www.transparenttextures.com/patterns/light-mesh.png");}
+
+.container2 { width:100%;
+height: 350px;
+background-color: #f7f7f7;
+background-image: url("https://www.transparenttextures.com/patterns/light-mesh.png");
+}
+
+.container { width:100%;
+height: 350px;
+}
+
+#lat, #lon { text-align:left}
+#map { width:100%;height:100%;padding:0;margin:50px 20px; }
+.address { cursor:pointer }
+.address:hover { color:#AA0000 }
+.button {
+	background-color: #4CAF50;
+  	border: none;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+ 	margin: 4px 2px;
+  	cursor: pointer;
+}
+	</style>
+</head>
+<body>
+<div class ="container2">
+	<div class ="container">
+		<div id="back" align="left" class="back">
+			<a type="button" href="{% url 'userhome' %}" class="button">Back</a>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<a type="button" href="{% url 'userlogin' %}" class="button">Log Out</a>
+		</div>
+		<br><br>
+		<div class="limiter">
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th align="left" >Name</th>
+								<th align="left" >Category</th>
+								<th align="left" >Opening Time</th>
+                                <th align="left" >Closing Time</th>
+                                <th align="left" >Offday</th>
+                                <th align="left" >View Details</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for place in place_number %}
+							<form action="{% url 'placedetails' %}" method='POST'>{% csrf_token %}
+								<tr>
+									<td class == "column1"> {{ place.name}}</td>
+									<td class == "column2"> {{ place.category}}</td>
+									<td class == "column3"> {{ place.opening_time}}</td>
+                                	<td class == "column4"> {{ place.closing_time}}</td>
+                                	<td class == "column5"> {{ place.offday}}</td>
+									<td class == "column6" > <button class="button"> Details </button></td>
+									<input type="hidden" name="table_data" value={{ place.place_id }} />
+								</tr>
+							</form>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+<input type="hidden" name="lat" id="lat" size=12 value="">
+<input type="hidden" name="lon" id="lon" size=12 value="">
+<div id="map"></div>
+<br />
+</div>
+</div>
+<script type="text/javascript">
+var options = {
+ center: [{{ my_loc_gps_x }}, {{ my_loc_gps_y }}],
+ zoom: 12
+}
+
+document.getElementById('lat').value = {{ my_loc_gps_x }};
+document.getElementById('lon').value = {{ my_loc_gps_y }};
+
+var map = L.map('map', options);
+var nzoom = 16;
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: 'OSM'}).addTo(map);
+
+var redIcon = new L.Icon({
+  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+var myMarker1 = L.marker([{{ my_loc_gps_x }}, {{ my_loc_gps_y }}], {title: "Coordinates", alt: "Coordinates", draggable: false, icon: redIcon}).addTo(map).on('dragend', function() {
+ var lat1 = myMarker1.getLatLng().lat.toFixed(8);
+ var lon1 = myMarker1.getLatLng().lng.toFixed(8);
+ var czoom = map.getZoom();
+ if(czoom < 16) { nzoom = czoom + 2; }
+ if(nzoom > 16) { nzoom = 16; }
+ if(czoom != 16) { map.setView([lat1,lon1], nzoom); } else { map.setView([lat1,lon1]); }
+ //document.getElementById('lat').value = lat1;
+ //document.getElementById('lon').value = lon1;
+ myMarker1.bindPopup("My location").openPopup();
+});
+
+//var mymarker = [];
+var i;
+ {% for place in place_number %}
+ var myMarker = L.marker([{{ place.gps_x }}, {{ place.gps_y }}], {title: "Coordinates", alt: "Coordinates", draggable: false}).addTo(map).on('dragend', function() {
+ var lat = myMarker.getLatLng().lat.toFixed(8);
+ var lon = myMarker.getLatLng().lng.toFixed(8);
+ var czoom = map.getZoom();
+ if(czoom < 16) { nzoom = czoom + 2; }
+ if(nzoom > 16) { nzoom = 16; }
+ if(czoom != 16) { map.setView([lat,lon], nzoom); } else { map.setView([lat,lon]); }
+ //document.getElementById('lat').value = lat;
+ //document.getElementById('lon').value = lon;
+ //myMarker.bindPopup( "Lat " + {{ place.name }}).openPopup();
+});
+{% endfor %}
+
+
+
+</script>
+
+<!--===============================================================================================-->
+	<script src="{% static 'admin_inbox/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'admin_inbox/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'admin_inbox/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'admin_inbox/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+
+
+</body>
+</html>
