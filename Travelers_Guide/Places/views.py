@@ -271,7 +271,7 @@ def submit_place_review(request, *args, **kwargs):
 
             obj = Place.objects.get(place_id=data.place_id)
             obj.average_rating = avg_rating
-            obj.save();
+            obj.save()
 
 
             j = {

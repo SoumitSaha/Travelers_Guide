@@ -43,7 +43,7 @@ class Place(models.Model):
     location_id = models.ForeignKey(Location, on_delete=models.CASCADE)
     name = models.CharField(max_length=250, blank=False)
     category = models.CharField(max_length=50, blank=False)
-    aveage_rating = models.CharField(max_length=1, blank=False, default="")
+    average_rating = models.CharField(max_length=1, blank=False, default=0)
     gps_x = models.CharField(max_length=250, blank=False)
     gps_y = models.CharField(max_length=250, blank=False)
     opening_time = models.TimeField(blank=True, null=True)
