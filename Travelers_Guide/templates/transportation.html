@@ -98,35 +98,34 @@ height: 350px;
 <div class="container2">
 <div class="container">
 
-<b>Coordinates</b>
-<form action="{% url 'userplaces' %}" method='POST'>{% csrf_token %}
-<input type="text" name="lat" id="lat" size=12 value="">
-<input type="text" name="lon" id="lon" size=12 value="">
-  <br><br>
-  <button style="color: Green; width: 200px">Show Nearby Places</button></form>
-  <form action="{% url 'userrestaurants' %}" method='POST'>{% csrf_token %}
- <input type="hidden" name="lat2" id="lat2" size=12 value="">
- <input type="hidden" name="lon2" id="lon2" size=12 value="">
-  <button style="color: Green; width: 200px">Show Nearby Restaurants</button></form>
-    <form action="{% url 'userfood' %}" method='POST'>{% csrf_token %}
- <input type="hidden" name="lat3" id="lat3" size=12 value="">
- <input type="hidden" name="lon3" id="lon3" size=12 value="">
-        <input type="text" name="food" id="food" size=12 value="">
-  <button style="color: Green; width: 200px">Search food</button></form>
-<div>
-<a type = "button" href="{% url 'usertransportation' %}"><button style="color: Green; width:200px">Transportation</button></a><br>
-</div> 
+<form action="{% url 'transportationresult' %}" method='POST'>{% csrf_token %}
+	<b>Start Coordinates</b> <br>
+	<input type="text" name="lat" id="lat" size=12 value="">
+	<input type="text" name="lon" id="lon" size=12 value="">
+	<br><br>
+	<b>Destination Coordinates</b> <br>
+	<input type="text" name="lat_dt" id="lat_dt" size=12 value="">
+	<input type="text" name="lon_dt" id="lon_dt" size=12 value="">
+	<br><br>
+	<button style="color: Green; width: 200px">Show Transport</button>
+</form> 
 <br>
-  
-  
-<a href="{% url 'suggestplace' %}" style="font-size: 20px">Suggest a new Place.</a><br>
 
 <br><br>
-<b> Please provide your location</b>
+<b> Please provide your start location</b>
 <div id="search">
 <input type="text" name="addr" value="" id="addr" size="58" />
 <button type="button" onclick="addr_search();" style="color: Green">Search</button>
 <div id="results"></div>
+</div>
+
+<br><br>
+
+<b> Please provide your destination location</b>
+<div id="search">
+<input type="text" name="addr_dt" value="" id="addr_dt" size="58" />
+<button type="button" onclick="addr_search_dt();" style="color: Green">Search</button>
+<div id="results_dt"></div>
 </div>
 
 <br />
@@ -147,8 +146,12 @@ height: 350px;
 //var startlon = -73.98545321;
 
 //Dhaka Lalbag
-var startlat = 23.721951;
-var startlon = 90.387815;
+var startlat = 23.71876615;
+var startlon = 90.38695750;
+
+var startlat2 = 23.74707065;
+var startlon2 = 90.37574651;
+
 
 
 var options = {
@@ -159,45 +162,56 @@ var options = {
 document.getElementById('lat').value = startlat;
 document.getElementById('lon').value = startlon;
 
-document.getElementById('lat2').value = startlat;
-document.getElementById('lon2').value = startlon;
 
-document.getElementById('lat3').value = startlat;
-document.getElementById('lon3').value = startlon;
+document.getElementById('lat_dt').value = startlat2;
+document.getElementById('lon_dt').value = startlon2;
 
 var map = L.map('map', options);
 var nzoom = 12;
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: 'OSM'}).addTo(map);
 
+var redIcon = new L.Icon({
+  iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
 var myMarker = L.marker([startlat, startlon], {title: "Coordinates", alt: "Coordinates", draggable: true}).addTo(map).on('dragend', function() {
  var lat = myMarker.getLatLng().lat.toFixed(8);
  var lon = myMarker.getLatLng().lng.toFixed(8);
-
- var lat2 = myMarker.getLatLng().lat.toFixed(8);
- var lon2 = myMarker.getLatLng().lng.toFixed(8);
-
-  var lat3 = myMarker.getLatLng().lat.toFixed(8);
- var lon3= myMarker.getLatLng().lng.toFixed(8);
 
  var czoom = map.getZoom();
  map.setView([lat,lon], czoom);
  document.getElementById('lat').value = lat;
  document.getElementById('lon').value = lon;
 
- document.getElementById('lat2').value = lat2;
- document.getElementById('lon2').value = lon2;
-
-document.getElementById('lat3').value = lat3;
- document.getElementById('lon3').value = lon3;
-
-// myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
+ myMarker.bindPopup("Start : <br> Lat " + lat + "<br />Lon " + lon).openPopup();
 });
+
+myMarker.bindPopup("Start : <br> Lat " + startlat + "<br />Lon " + startlon).openPopup();
+
+var myMarker_dt = L.marker([startlat2, startlon2], {title: "Coordinates", alt: "Coordinates", draggable: true, icon: redIcon}).addTo(map).on('dragend', function() {
+ var lat_dt = myMarker_dt.getLatLng().lat.toFixed(8);
+ var lon_dt = myMarker_dt.getLatLng().lng.toFixed(8);
+
+ var czoom = map.getZoom();
+ map.setView([lat_dt,lon_dt], czoom);
+ document.getElementById('lat_dt').value = lat_dt;
+ document.getElementById('lon_dt').value = lon_dt;
+
+ myMarker_dt.bindPopup("Destination : <br> Lat " + lat_dt + "<br />Lon " + lon_dt).openPopup();
+});
+
+myMarker_dt.bindPopup("Destination : <br> Lat " + startlat + "<br />Lon " + startlon).openPopup();
 
 function chooseAddr(lat1, lng1)
 {
  myMarker.closePopup();
- map.setView([lat1, lng1],14);
+ map.setView([lat1, lng1],12);
  myMarker.setLatLng([lat1, lng1]);
  lat = lat1.toFixed(8);
  lon = lng1.toFixed(8);
@@ -206,13 +220,25 @@ function chooseAddr(lat1, lng1)
  document.getElementById('lat').value = lat;
  document.getElementById('lon').value = lon;
 
- document.getElementById('lat2').value = lat;
- document.getElementById('lon2').value = lon;
-
-  document.getElementById('lat3').value = lat;
- document.getElementById('lon3').value = lon;
- //myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
+ myMarker.bindPopup("Start : <br> Lat " + lat + "<br />Lon " + lon).openPopup();
 }
+
+function chooseAddr_dt(lat1_dt, lng1_dt)
+{
+ myMarker_dt.closePopup();
+ map.setView([lat1_dt, lng1_dt],12);
+ myMarker_dt.setLatLng([lat1_dt, lng1_dt]);
+ lat_dt = lat1_dt.toFixed(8);
+ lon_dt = lng1_dt.toFixed(8);
+
+
+ document.getElementById('lat_dt').value = lat_dt;
+ document.getElementById('lon_dt').value = lon_dt;
+
+ myMarker_dt.bindPopup("Destination : <br> Lat " + lat_dt + "<br />Lon " + lon_dt).openPopup();
+}
+
+
 
 function myFunction(arr)
 {
@@ -235,6 +261,28 @@ function myFunction(arr)
 
 }
 
+
+function myFunction_dt(arr_dt)
+{
+ var out_dt = "<br />";
+ var i_dt;
+
+ if(arr_dt.length > 0)
+ {
+  for(i_dt = 0; i_dt < arr_dt.length; i_dt++)
+  {
+   out_dt += "<div class='address' title='Show Location and Coordinates_dt' onclick='chooseAddr_dt(" + arr_dt[i_dt].lat + ", " + arr_dt[i_dt].lon + ");return false;'>" + arr_dt[i_dt].display_name + "</div>";
+  }
+  out_dt += "<br /> "
+  document.getElementById('results_dt').innerHTML = out_dt;
+ }
+ else
+ {
+  document.getElementById('results_dt').innerHTML = "Sorry, no results...";
+ }
+
+}
+
 function addr_search()
 {
  var inp = document.getElementById("addr");
@@ -250,6 +298,23 @@ function addr_search()
  };
  xmlhttp.open("GET", url, true);
  xmlhttp.send();
+}
+
+function addr_search_dt()
+{
+ var inp_dt = document.getElementById("addr_dt");
+ var xmlhttp_dt = new XMLHttpRequest();
+ var url_dt = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + inp_dt.value;
+ xmlhttp_dt.onreadystatechange = function()
+ {
+   if (this.readyState == 4 && this.status == 200)
+   {
+    var myArr_dt = JSON.parse(this.responseText);
+    myFunction_dt(myArr_dt);
+   }
+ };
+ xmlhttp_dt.open("GET", url_dt, true);
+ xmlhttp_dt.send();
 }
 
 </script>

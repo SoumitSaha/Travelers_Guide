@@ -20,9 +20,11 @@ from django import urls
 from Places.views import admin_login, admin_verification_1, admin_verification_2,  project_home, user_login, user_contact
 from Places.views import contact_confirm, admin_inbox, user_home, user_signup, user_add, user_places, place_details, submit_place_review, suggest_place, admin_place_review
 from Places.views import place_suggestion_info, admin_place_review_action
-from Restaurants.views import restaurants_details,user_food
 
+from Restaurants.views import restaurants_details,user_food
 from Restaurants.views import user_restaurants
+
+from Transportations.views import user_transportation,transportation_result
 
 urlpatterns = [
     path('', project_home, name='projecthome'),
@@ -46,5 +48,7 @@ urlpatterns = [
     path('user/home/placesuggest/validate', place_suggestion_info, name='placesuggestion'),
     path('user/home/restaurants', user_restaurants, name='userrestaurants'),
     path('user/home/userfood', user_food, name='userfood'),
+    path('user/home/transportation', user_transportation, name='usertransportation'),
+    path('user/home/transportation/details', transportation_result, name='transportationresult'),
 
 ]

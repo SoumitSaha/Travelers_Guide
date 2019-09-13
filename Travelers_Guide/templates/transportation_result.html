@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'transportation_css/fdw-demo.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'transportation_css/style.css' %}"/>
+</head>
+<body onload="myFunction()">
+	<div id="something"></div>
+	<script type="text/javascript">
+		var src = "{{ source_stand }}";
+		var dst = "{{ dst_stand }}";
+		var buses = "{{ bus_number }}";
+		function myFunction(){
+			var output = "<div id='resultcontainer'> <div class='freshdesignweb'> <br> <br> <h3 style=\"font: 400 20px/1.5 Helvetica, Verdana, sans-serif;\"> Start Location: " + src + "<br> Destination Location: " + dst + "</h3><br><hr>";
+			{% for bus in bus_number %}
+				var i;
+				var busname = "{{ bus.transport_name }}";
+				output+= "<h1>" + busname + "</h1>" + "<div class='numberlist'>" + "<ol>";
+				var arr = "{{ bus.route }}";
+				arr = arr.split(",");
+				for(i = 0; i<arr.length; i++){
+					output+= "<li><a>" + arr[i] + "</a></li>";
+				}
+				output += "</ol>";
+			{% endfor %}
+			output += "</div></div></div>";
+			document.getElementById("something").innerHTML = output;
+		}
+	</script>
+</body>
+</html>
