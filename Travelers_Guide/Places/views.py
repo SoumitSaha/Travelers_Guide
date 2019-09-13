@@ -256,6 +256,24 @@ def submit_place_review(request, *args, **kwargs):
             i = PlaceReview(place_id=place_global, tourist_id=User_Id, tourist_name=Name.name, rating=Rating,
                             comment=Comment)
             i.save()
+
+            rating_sum = 0
+            count = 0
+            data = PlaceReview.objects.filter(place_id=place_global)
+            for i in data:
+                rating_sum += int(i.rating)
+                count += 1
+
+            if count != 0:
+                avg_rating = rating_sum / count
+            else:
+                avg_rating = 0
+
+            obj = Place.objects.get(place_id=data.place_id)
+            obj.average_rating = avg_rating
+            obj.save();
+
+
             j = {
                 'msg': "Thank you for your review"
             }
@@ -265,6 +283,23 @@ def submit_place_review(request, *args, **kwargs):
             i.rating = Rating
             i.comment = Comment
             i.save()
+
+            rating_sum = 0
+            count = 0
+            data = PlaceReview.objects.filter(place_id=place_global)
+            for i in data:
+                rating_sum += int(i.rating)
+                count += 1
+
+            if count != 0:
+                avg_rating = rating_sum / count
+            else:
+                avg_rating = 0
+
+            obj = Place.objects.get(place_id=place_global.place_id)
+            obj.average_rating = avg_rating
+            obj.save()
+            print(obj.average_rating)
             j = {
                 'msg': "Your review has been updated"
             }
