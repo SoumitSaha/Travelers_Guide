@@ -34,7 +34,19 @@
 		#map { width:100%;height:100%;padding:0;margin:0; }
 		.address { cursor:pointer }
 		.address:hover { color:#AA0000 }
-
+        .b_class{
+	        background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+            font-size:25px;
+            color: #000000;
+        }
+        .b_class:focus {
+            outline:none;
+        }
 	</style>
 </head>
 <body>
@@ -65,7 +77,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 					
-                    <ul class="nav navbar-nav ml-auto"><li class="nav-item"><a href="#"><b style="font-size:25px">TRAVELER'S GUIDE</b></a></li></ul>
+                    <ul class="nav navbar-nav ml-auto"><li class="nav-item"><a href="{% url 'userhome' %}"><b style="font-size:25px">TRAVELER'S GUIDE</b></a></li></ul>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
@@ -89,7 +101,28 @@
                 </div>
             </nav>
 
-			Contents Here
+
+            <table class="table">
+		        <tr>
+			        <th colspan="4">Top Rated Places</th>
+		        </tr>
+		        {% for places in top_places %}
+                <form action="{% url 'placedetails' %}" method='POST'>{% csrf_token %}
+		        <tr>
+			        <td align="left" style="width: 25%">
+				        <img src={{ places.sample_pic }} id="image" alt="just nothing" height = "100" width="190">
+			        </td>
+                    <td><a style="font-size:25px; color:#000000"><b><button class="b_class">{{ places.name }}</button></b></a><a style="font-size:20px; color:#000000"><br>{{ places.category }}<br>Rating : &nbsp{{ places.average_rating }}/5.0</th>
+
+			        <!-- <td border=3 height=100 width=100><img width="150" height="100" src = {{ food.pic }}></th>  -->
+		        </tr>
+                    <input type="hidden" name="table_data" value={{ places.place_id }} />
+                </form>
+                {% endfor %}
+            </table>
+
+
+
 		</div>
 	</div>
 </body>

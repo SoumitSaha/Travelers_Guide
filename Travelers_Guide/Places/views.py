@@ -7,9 +7,10 @@ from django.db.models import Q
 from math import sin, cos, sqrt, atan2, radians
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
-from django.db import IntegrityError
+from django.db import IntegrityError, connection
 from django.views.decorators.cache import cache_control
 from django.contrib.auth.decorators import login_required
+from collections import namedtuple
 
 from Restaurants.views import user_restaurants, wraper
 
@@ -21,6 +22,10 @@ User_Id = 0
 place_global = 0
 
 
+def namedtuplefetchall(cursor):
+    desc = cursor.description
+    nt_result = namedtuple('Result', [col[0] for col in desc])
+    return [nt_result(*row) for row in cursor.fetchall()]
 
 
 def project_home(request, *args, **kwargs):
@@ -119,15 +124,36 @@ def user_home(request, *args, **kwargs):
             User_Id = Tourist.objects.get(user_name=Username)
             print(User_Id.tourist_id)
             login(request, user)
-            return render(request, "user_home.html", {})
+
+            cursor = connection.cursor()
+            cursor.execute("SELECT * FROM Places WHERE average_rating>=3.0")
+            t_places = namedtuplefetchall(cursor)
+
+            j = {
+
+                'top_places': t_places,
+            }
+
+
+            print(t_places)
+            return render(request, "user_home.html", j)
         else:
             return render(request, "user_login_again.html", {})
     else:
         if request.user.is_authenticated:
-            return render(request, "user_home.html", {})
+
+            cursor = connection.cursor()
+            cursor.execute("SELECT * FROM Places WHERE average_rating>=3.0")
+            t_places = namedtuplefetchall(cursor)
+
+            j = {
+
+                'top_places': t_places,
+            }
+            print(t_places)
+            return render(request, "user_home.html", j)
         else:
             return render(request, "user_login_continue.html", {})
-
 
 
 def user_places(request, *args, **kwargs):

@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="798334f6-2f40-449e-885f-6e47f94397be" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Places/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/food_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/food_search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/place_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/place_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/places.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/places.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/restaurants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_home_places.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home_places.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_home_restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home_restaurants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Places/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-799">
-              <caret line="105" column="26" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
+            <state relative-caret-position="340">
+              <caret line="152" column="27" selection-start-line="152" selection-start-column="27" selection-end-line="152" selection-end-column="27" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -34,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/places.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1615">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="306">
+              <caret line="63" column="105" selection-start-line="63" selection-start-column="105" selection-end-line="63" selection-end-column="105" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -47,18 +45,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/transportation.html">
+        <entry file="file://$PROJECT_DIR$/Places/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1921">
-              <caret line="119" column="18" lean-forward="true" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="172">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -78,12 +68,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/place_details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+            <state relative-caret-position="170">
+              <caret line="73" column="105" selection-start-line="73" selection-start-column="105" selection-end-line="73" selection-end-column="105" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#a#0;n#center#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#center#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -98,10 +89,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/user_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+            <state relative-caret-position="206">
+              <caret line="79" column="105" selection-start-line="79" selection-start-column="85" selection-end-line="79" selection-end-column="105" />
               <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,8 +138,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/food_search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="281" column="62" selection-start-line="281" selection-start-column="62" selection-end-line="281" selection-end-column="62" />
+            <state relative-caret-position="104">
+              <caret line="267" selection-start-line="267" selection-end-line="267" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -239,15 +239,15 @@
         <option value="$PROJECT_DIR$/Transportations/views.py" />
         <option value="$PROJECT_DIR$/templates/transportation_result.html" />
         <option value="$PROJECT_DIR$/Places/models.py" />
-        <option value="$PROJECT_DIR$/templates/user_home.html" />
-        <option value="$PROJECT_DIR$/Places/views.py" />
         <option value="$PROJECT_DIR$/Restaurants/views.py" />
         <option value="$PROJECT_DIR$/Travelers_Guide/urls.py" />
         <option value="$PROJECT_DIR$/templates/user_home_places.html" />
         <option value="$PROJECT_DIR$/templates/transportation.html" />
         <option value="$PROJECT_DIR$/templates/user_home_restaurants.html" />
         <option value="$PROJECT_DIR$/templates/restaurants.html" />
+        <option value="$PROJECT_DIR$/Places/views.py" />
         <option value="$PROJECT_DIR$/templates/food_search.html" />
+        <option value="$PROJECT_DIR$/templates/user_home.html" />
         <option value="$PROJECT_DIR$/templates/places.html" />
         <option value="$PROJECT_DIR$/templates/place_details.html" />
       </list>
@@ -607,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Places/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/review_confirm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1661">
@@ -651,16 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/transportation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1921">
@@ -683,39 +666,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/food_search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="281" column="62" selection-start-line="281" selection-start-column="62" selection-end-line="281" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Travelers_Guide/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="43" column="41" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="41" />
           <folding>
             <element signature="e#639#671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Places/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799">
-          <caret line="105" column="26" lean-forward="true" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_home_restaurants.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="119" column="105" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="105" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#form#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,10 +686,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Places/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="152" column="27" selection-start-line="152" selection-start-column="27" selection-end-line="152" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Places/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_home_restaurants.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="119" column="105" selection-start-line="119" selection-start-column="28" selection-end-line="119" selection-end-column="105" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/food_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="267" selection-start-line="267" selection-end-line="267" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="79" column="105" selection-start-line="79" selection-start-column="85" selection-end-line="79" selection-end-column="105" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/places.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1615">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="306">
+          <caret line="63" column="105" selection-start-line="63" selection-start-column="105" selection-end-line="63" selection-end-column="105" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -745,12 +754,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/place_details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+        <state relative-caret-position="170">
+          <caret line="73" column="105" selection-start-line="73" selection-start-column="105" selection-end-line="73" selection-end-column="105" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#a#0;n#center#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#center#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
