@@ -1,102 +1,104 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-	<title>Spectacular Places</title>
-	 <!-- <script type="text/javascript">
-        function preventBack() { window.history.forward(); }
-        setTimeout("preventBack()", 0);
-        window.onunload = function () { null };
-    </script> -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="{% static 'admin_inbox/images/icons/favicon.ico' %}"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/vendor/bootstrap/css/bootstrap.min.css' %}">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/vendor/animate/animate.css' %}">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/vendor/select2/select2.min.css' %}">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/vendor/perfect-scrollbar/perfect-scrollbar.css' %}">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/css/util.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'admin_inbox/css/main.css' %}">
-<!--===============================================================================================-->
+<title>User Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="{% static 'home_template/style2.css' %}">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+	<style type="text/css">
+		html, body { width:100%;}
+		.container {
+			width:90%;
+			height: 350px;
+		}
+		#lat, #lon { text-align:left}
+		#map { width:100%;height:100%;padding:0;margin:0; }
+		.address { cursor:pointer }
+		.address:hover { color:#AA0000 }
 
-	<style>
-		html, body { width:100%;background-color: #f7f7f7;
-background-image: url("https://www.transparenttextures.com/patterns/light-mesh.png");}
-
-.container2 { width:100%;
-height: 350px;
-background-color: #f7f7f7;
-background-image: url("https://www.transparenttextures.com/patterns/light-mesh.png");
-}
-
-.container { width:100%;
-height: 350px;
-}
-
-#lat, #lon { text-align:left}
-#map { width:100%;height:100%;padding:0;margin:50px 20px; }
-.address { cursor:pointer }
-.address:hover { color:#AA0000 }
-.button {
-	background-color: #4CAF50;
-  	border: none;
-  	color: white;
-  	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 16px;
- 	margin: 4px 2px;
-  	cursor: pointer;
-}
 	</style>
 </head>
 <body>
-<div class ="container2">
+
+	<div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+				<img src="{% static 'home_template/Capture2.png' %}" style="height: 10%; width: 100%">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="{% url 'userhomeplaces' %}">Nearby places</a>
+                </li>
+                <li>
+                    <a href="{% url 'userhomerestaurants' %}" style="background-color: #FFFFFF ;color: #7386D5;">Restaurants</a>
+                </li>
+                <li>
+                    <a href="{% url 'usertransportation' %}">Transportation</a>
+                </li>
+				<li>
+                    <a href="{% url 'suggestplace' %}">Suggest a new place</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <ul class="nav navbar-nav ml-auto"><li class="nav-item"><a href="{% url 'userhome' %}"><b style="font-size:25px">TRAVELER'S GUIDE</b></a></li></ul>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Profile</a>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link" href="{% url 'userlogin' %}">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+
+
+
+
+
 	<div class ="container">
-		<div id="back" align="left" class="back">
-			<a type="button" href="{% url 'userhomerestaurants' %}" class="button">Back</a>
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			<a type="button" href="{% url 'userlogin' %}" class="button">Log Out</a>
-		</div>
 		<br><br>
 		<div class="limiter">
 			<div class="wrap-table100">
 				<div class="table100">
-					<table>
-						<thead>
+					<table class="table">
+						<thead class="thead-dark">
 							<tr class="table100-head">
 								<th align="left" >Name</th>
 								<th align="left" >Category</th>
@@ -110,18 +112,19 @@ height: 350px;
 							{% for place in place_number %}
 							<form action="{% url 'restaurantsdetails' %}" method='POST'>{% csrf_token %}
 								<tr>
-									<td class == "column1"> {{ place.name}}</td>
-									<td class == "column2"> {{ place.category}}</td>
-									<td class == "column3"> {{ place.opening_time}}</td>
-                                	<td class == "column4"> {{ place.closing_time}}</td>
-                                	<td class == "column5"> {{ place.offday}}</td>
-									<td class == "column6" > <button class="button"> Details </button></td>
+									<td class ="column1"> {{ place.name}}</td>
+									<td class ="column2"> {{ place.category}}</td>
+									<td class ="column3"> {{ place.opening_time}}</td>
+                                	<td class ="column4"> {{ place.closing_time}}</td>
+                                	<td class ="column5"> {{ place.offday}}</td>
+									<td class ="column6" > <button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 100px"> Details </button></td>
 									<input type="hidden" name="table_data" value={{ place.restaurant_id }} />
 								</tr>
 							</form>
 							{% endfor %}
 						</tbody>
 					</table>
+					<br><br><br><br>
 				</div>
 			</div>
 		</div>
@@ -132,11 +135,26 @@ height: 350px;
 <div id="map"></div>
 <br />
 </div>
-</div>
-<script type="text/javascript">
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+
+	<script type="text/javascript">
 var options = {
  center: [{{ my_loc_gps_x }}, {{ my_loc_gps_y }}],
- zoom: 12
+ zoom: 15
 }
 
 document.getElementById('lat').value = {{ my_loc_gps_x }};
@@ -187,15 +205,6 @@ var i;
 
 
 </script>
-
-<!--===============================================================================================-->
-	<script src="{% static 'admin_inbox/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
-<!--===============================================================================================-->
-	<script src="{% static 'admin_inbox/vendor/bootstrap/js/popper.js' %}"></script>
-	<script src="{% static 'admin_inbox/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-<!--===============================================================================================-->
-	<script src="{% static 'admin_inbox/vendor/select2/select2.min.js' %}"></script>
-<!--===============================================================================================-->
 
 
 </body>
