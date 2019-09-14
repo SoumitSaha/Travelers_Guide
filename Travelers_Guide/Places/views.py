@@ -103,6 +103,10 @@ def user_signup(request, *args, **kwargs):
     return render(request, "user_signup.html", {})
 
 
+def user_home_places(request, *args, **kwargs):
+    return render(request, "user_home_places.html", {})
+
+
 def user_home(request, *args, **kwargs):
     if request.method == 'POST':
         Username = request.POST.get("username", "")
@@ -123,6 +127,7 @@ def user_home(request, *args, **kwargs):
             return render(request, "user_home.html", {})
         else:
             return render(request, "user_login_continue.html", {})
+
 
 
 def user_places(request, *args, **kwargs):

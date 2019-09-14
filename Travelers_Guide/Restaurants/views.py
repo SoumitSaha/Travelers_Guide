@@ -27,6 +27,10 @@ def namedtuplefetchall(cursor):
     nt_result = namedtuple('Result', [col[0] for col in desc])
     return [nt_result(*row) for row in cursor.fetchall()]
 
+
+def user_home_restaurants(request, *args, **kwargs):
+    return render(request, "user_home_restaurants.html", {})
+
 def user_restaurants(request, *args, **kwargs):
     print(request.method)
     if request.method == 'POST':

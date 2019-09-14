@@ -1,0 +1,251 @@
+{% load static %}
+
+<html>
+<head>
+<title>User Home</title>
+  <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="{% static 'home_template/style2.css' %}">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+	<style type="text/css">
+		html, body { width:100%;}
+		.container { 
+			width:85%;
+			height: 350px;
+		}
+		#lat, #lon { text-align:left}
+		#map { width:100%;height:100%;padding:0;margin:0; }
+		.address { cursor:pointer }
+		.address:hover { color:#AA0000 }
+
+	</style>
+</head>
+<body>
+
+	<div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+				<img src="{% static 'home_template/Capture2.png' %}" style="height: 10%; width: 100%">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="{% url 'userhomeplaces' %}">Nearby places</a>
+                </li>
+                <li>
+                    <a href="{% url 'userhomerestaurants' %}" style="background-color: #FFFFFF ;color: #7386D5;">Restaurants</a>
+                </li>
+                <li>
+                    <a href="{% url 'usertransportation' %}">Transportation</a>
+                </li>
+				<li>
+                    <a href="{% url 'suggestplace' %}">Suggest a new place</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+					
+                    <ul class="nav navbar-nav ml-auto"><li class="nav-item"><a href="{% url 'userhome' %}"><b style="font-size:25px">TRAVELER'S GUIDE</b></a></li></ul>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ's</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Profile</a>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link" href="{% url 'userlogin' %}">Log Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+	
+	
+	
+	
+	
+	
+			<div class="container">
+				<b> Please provide your location</b>
+				<div id="search">
+					<input class="form-control form-control-md" type="text" name="addr" value="" id="addr" size="58" /><br>
+					<button type="button" onclick="addr_search();" class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 100px">Search</button>
+					<div id="results"></div>
+				</div>
+				<br>
+				<b>Coordinates</b>
+					<form action="{% url 'userplaces' %}" method='POST'>{% csrf_token %}
+					<input type="text" name="lat" id="lat" size=12 value="">
+					<input type="text" name="lon" id="lon" size=12 value="">
+					<br><br>
+					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Places</button>
+				</form>
+				<form action="{% url 'userrestaurants' %}" method='POST'>{% csrf_token %}
+					<input type="hidden" name="lat2" id="lat2" size=12 value="">
+					<input type="hidden" name="lon2" id="lon2" size=12 value="">
+					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Restaurants</button>
+				</form>
+				<form action="{% url 'userfood' %}" method='POST'>{% csrf_token %}
+					<input type="hidden" name="lat3" id="lat3" size=12 value="">
+					<input type="hidden" name="lon3" id="lon3" size=12 value="">
+					<b> Search by food</b>
+					<input class="form-control form-control-md" type="text" name="food" id="food" size=12 value=""><br>
+					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Search food</button>
+				</form>
+				<div>
+					<a type = "button" href="#"><button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Transportation</button></a><br>
+				</div>
+				<br><br>
+				
+				<br />
+
+				<div id="map"></div>
+				<br />
+
+				<!-- Footer -->
+				<footer class="page-footer font-small blue">
+
+  					<!-- Copyright -->
+  					<div class="footer-copyright text-center py-3">© 2019 Copyright:
+    					<a> travelersguide.com</a>
+  					</div>
+  					<!-- Copyright -->
+				</footer>
+				<!-- Footer -->
+			</div>
+		</div>
+
+		<script type="text/javascript">
+
+			//Dhaka Lalbag
+			var startlat = 23.721951;
+			var startlon = 90.387815;
+
+
+			var options = {
+				center: [startlat, startlon],
+				zoom: 12
+			}
+
+			document.getElementById('lat').value = startlat;
+			document.getElementById('lon').value = startlon;
+
+			document.getElementById('lat2').value = startlat;
+			document.getElementById('lon2').value = startlon;
+
+			document.getElementById('lat3').value = startlat;
+			document.getElementById('lon3').value = startlon;
+
+			var map = L.map('map', options);
+			var nzoom = 12;
+
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: 'OSM'}).addTo(map);
+
+			var myMarker = L.marker([startlat, startlon], {title: "Coordinates", alt: "Coordinates", draggable: true}).addTo(map).on('dragend', function() {
+				var lat = myMarker.getLatLng().lat.toFixed(8);
+				var lon = myMarker.getLatLng().lng.toFixed(8);
+
+				var lat2 = myMarker.getLatLng().lat.toFixed(8);
+				var lon2 = myMarker.getLatLng().lng.toFixed(8);
+
+				var lat3 = myMarker.getLatLng().lat.toFixed(8);
+				var lon3= myMarker.getLatLng().lng.toFixed(8);
+
+				var czoom = map.getZoom();
+				map.setView([lat,lon], czoom);
+				document.getElementById('lat').value = lat;
+				document.getElementById('lon').value = lon;
+
+				document.getElementById('lat2').value = lat2;
+				document.getElementById('lon2').value = lon2;
+
+				document.getElementById('lat3').value = lat3;
+				document.getElementById('lon3').value = lon3;
+
+				// myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
+			});
+
+			function chooseAddr(lat1, lng1){
+				myMarker.closePopup();
+				map.setView([lat1, lng1],14);
+				myMarker.setLatLng([lat1, lng1]);
+				lat = lat1.toFixed(8);
+				lon = lng1.toFixed(8);
+
+
+				document.getElementById('lat').value = lat;
+				document.getElementById('lon').value = lon;
+
+				document.getElementById('lat2').value = lat;
+				document.getElementById('lon2').value = lon;
+
+				document.getElementById('lat3').value = lat;
+				document.getElementById('lon3').value = lon;
+				//myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
+			}
+
+			function myFunction(arr){
+				var out = "<br />";
+				var i;
+
+				if(arr.length > 0){
+					for(i = 0; i < arr.length; i++){
+						out += "<div class='address' title='Show Location and Coordinates' onclick='chooseAddr(" + arr[i].lat + ", " + arr[i].lon + ");return false;'>" + arr[i].display_name + "</div>";
+					}
+					out += "<br /> "
+					document.getElementById('results').innerHTML = out;
+				}
+				else{
+					document.getElementById('results').innerHTML = "Sorry, no results...";
+				}
+
+			}
+
+			function addr_search(){
+				var inp = document.getElementById("addr");
+				var xmlhttp = new XMLHttpRequest();
+				var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + inp.value;
+				xmlhttp.onreadystatechange = function(){
+					if (this.readyState == 4 && this.status == 200){
+						var myArr = JSON.parse(this.responseText);
+						myFunction(myArr);
+					}
+				};
+				xmlhttp.open("GET", url, true);
+				xmlhttp.send();
+			}
+		</script>
+
+
+	</div>
+</body>
+</html>
