@@ -121,16 +121,8 @@
 		{% for food in food_number %}
 		<form action="{% url 'restaurantsdetails' %}" method='POST'>{% csrf_token %}
 		<tr>
-			<td align="left" style="width: 25%">
-				<img src="" id="image" alt="just nothing" height = "100" width="150">
-				<script type="text/javascript">
-						onload = function(){
-						var str1="/static/searched_food/images/";
-						var str2="{{ food.sample_pic }}";
-						var value = str1.concat(str2);
-						document.getElementById('image').setAttribute('src',value);
-					}
-				</script>
+			<td align="right" style="width: 25%">
+				<img src={{ food.pic }} id="image" height = "100" width="150">
 			</td>
 			<input type="hidden" name="table_data" value={{ food.restaurant_id }} />
 			<td colspan="2" style="font-size: 15px" align="center"><b><button class="b_class"> {{ food.name }}</button></b><br>

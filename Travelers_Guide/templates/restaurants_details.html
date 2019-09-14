@@ -128,23 +128,13 @@
 			<td>{{ food.name }}</th>
 			<td>{{ food.price }} tk.</th>
 			<td>{{ food.description }}</th>
+
 			<!-- <td border=3 height=100 width=100><img width="150" height="100" src = {{ food.pic }}></th>  -->
 
-			<td align="left" style="width: 25%">
-				<img src="" id="image" alt="just nothing" height = "100" width="150">
-				<script type="text/javascript">
-					onload = function(){
+			<td align="right" style="width: 25%">
 
-							var str1="/static/searched_food/images/";
-							var str2="{{ food.pic }}";
-							var value = str1.concat(str2);
-
-							document.getElementById('image').setAttribute('src',value);
-
-					}
-				</script>
+				<img src={{ food.pic }} id="image"  height = "100" width="150">
 			</td>
-
 		</tr>
 		{% endfor %}
 	</table>
