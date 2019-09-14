@@ -64,7 +64,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
-                    <ul class="nav navbar-nav ml-auto"><li class="nav-item"><a href="#"><b style="font-size:25px">TRAVELER'S GUIDE</b></a></li></ul>
+                    <ul class="nav navbar-nav ml-auto"><li class="nav-item"><a href="{% url 'userhome' %}"><b style="font-size:25px">TRAVELER'S GUIDE</b></a></li></ul>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
@@ -92,7 +92,7 @@
 				<form action="{% url 'transportationresult' %}" method='POST'>{% csrf_token %}
 					<b> Please provide your start location</b>
 					<div id="search">
-						<input class="form-control form-control-md" type="text" name="addr" value="" id="addr" size="58" /><br>
+						<input class="form-control form-control-md" type="text" name="addr" value="" id="addr" size="58" style="width: 50%;"/><br>
 						<button type="button" onclick="addr_search();" class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Search</button>
 						<div id="results"></div><br>
 					</div>
@@ -102,8 +102,8 @@
 					<input type="text" name="lon" id="lon" size=12 value="">
 					<br><br>
 					<b> Please provide your destination location</b>
-					<div id="search">
-						<input class="form-control form-control-md" type="text" name="addr_dt" value="" id="addr_dt" size="58" /><br>
+					<div id="search2">
+						<input class="form-control form-control-md" type="text" name="addr_dt" value="" id="addr_dt" size="58" style="width: 50%;"/><br>
 						<button type="button" onclick="addr_search_dt();" class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Search</button>
 						<div id="results_dt"></div><br>
 					</div>
