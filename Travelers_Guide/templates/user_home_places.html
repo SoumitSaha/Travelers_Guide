@@ -109,22 +109,6 @@
 					<br><br>
 					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Places</button>
 				</form>
-				<form action="{% url 'userrestaurants' %}" method='POST'>{% csrf_token %}
-					<input type="hidden" name="lat2" id="lat2" size=12 value="">
-					<input type="hidden" name="lon2" id="lon2" size=12 value="">
-					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Restaurants</button>
-				</form>
-				<form action="{% url 'userfood' %}" method='POST'>{% csrf_token %}
-					<input type="hidden" name="lat3" id="lat3" size=12 value="">
-					<input type="hidden" name="lon3" id="lon3" size=12 value="">
-					<b> Search by food</b>
-					<input class="form-control form-control-md" type="text" name="food" id="food" size=12 value=""><br>
-					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Search food</button>
-				</form>
-				<div>
-					<a type = "button" href="#"><button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Transportation</button></a><br>
-				</div>
-				<br><br>
 				
 				<br />
 
@@ -159,12 +143,6 @@
 			document.getElementById('lat').value = startlat;
 			document.getElementById('lon').value = startlon;
 
-			document.getElementById('lat2').value = startlat;
-			document.getElementById('lon2').value = startlon;
-
-			document.getElementById('lat3').value = startlat;
-			document.getElementById('lon3').value = startlon;
-
 			var map = L.map('map', options);
 			var nzoom = 12;
 
@@ -174,22 +152,11 @@
 				var lat = myMarker.getLatLng().lat.toFixed(8);
 				var lon = myMarker.getLatLng().lng.toFixed(8);
 
-				var lat2 = myMarker.getLatLng().lat.toFixed(8);
-				var lon2 = myMarker.getLatLng().lng.toFixed(8);
-
-				var lat3 = myMarker.getLatLng().lat.toFixed(8);
-				var lon3= myMarker.getLatLng().lng.toFixed(8);
 
 				var czoom = map.getZoom();
 				map.setView([lat,lon], czoom);
 				document.getElementById('lat').value = lat;
 				document.getElementById('lon').value = lon;
-
-				document.getElementById('lat2').value = lat2;
-				document.getElementById('lon2').value = lon2;
-
-				document.getElementById('lat3').value = lat3;
-				document.getElementById('lon3').value = lon3;
 
 				// myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
 			});
@@ -205,11 +172,6 @@
 				document.getElementById('lat').value = lat;
 				document.getElementById('lon').value = lon;
 
-				document.getElementById('lat2').value = lat;
-				document.getElementById('lon2').value = lon;
-
-				document.getElementById('lat3').value = lat;
-				document.getElementById('lon3').value = lon;
 				//myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
 			}
 

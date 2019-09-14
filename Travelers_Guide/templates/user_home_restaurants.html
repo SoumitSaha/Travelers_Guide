@@ -103,11 +103,9 @@
 				</div>
 				<br>
 				<b>Coordinates</b>
-					<form action="{% url 'userplaces' %}" method='POST'>{% csrf_token %}
+				<form action="{% url 'userplaces' %}" method='POST'>{% csrf_token %}
 					<input type="text" name="lat" id="lat" size=12 value="">
 					<input type="text" name="lon" id="lon" size=12 value="">
-					<br><br>
-					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Places</button>
 				</form>
 				<form action="{% url 'userrestaurants' %}" method='POST'>{% csrf_token %}
 					<input type="hidden" name="lat2" id="lat2" size=12 value="">
@@ -121,9 +119,6 @@
 					<input class="form-control form-control-md" type="text" name="food" id="food" size=12 value=""><br>
 					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Search food</button>
 				</form>
-				<div>
-					<a type = "button" href="#"><button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Transportation</button></a><br>
-				</div>
 				<br><br>
 				
 				<br />
