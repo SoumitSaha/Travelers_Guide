@@ -504,3 +504,40 @@ def user_profile_edit_page_show(request, *args, **kwargs):
 def about(request, *args, **kwargs):
     return render(request, "about.html", {})
 
+
+def profile_edit_confirm(request, *args, **kwargs):
+    if request.method == 'POST':
+        Name = request.POST.get("new_name", "")
+        Email = request.POST.get("new_email", "")
+        Passport = request.POST.get("new_passport", "")
+        Password = request.POST.get("new_password", "")
+        Conf_Password = request.POST.get("new_conf_password", "")
+
+        if Password != Conf_Password:
+            user_ = Tourist.objects.get(user_name=request.user)
+            j = {
+                'tourist': user_,
+                'msg': "Passwords didnot match"
+            }
+            return render(request, "profile_edit.html", j)
+
+        else:
+            tourist = Tourist.objects.get(user_name=request.user)
+            user = User.objects.get(username=request.user)
+
+            tourist.name = Name
+            tourist.email =Email
+            tourist.passport_no = Passport
+            user.set_password(Password)
+
+            tourist.save()
+            user.save()
+
+            return render(request, "profile_edit_confirm.html", {})
+
+
+
+    else:
+        return redirect('/user/home/profile/')
+
+

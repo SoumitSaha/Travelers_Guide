@@ -2,417 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="798334f6-2f40-449e-885f-6e47f94397be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Travelers_Guide.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Travelers_Guide.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0002_tourist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0002_tourist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0003_placereview.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0003_placereview.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0004_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0004_verification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0005_place_offday.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0005_place_offday.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0006_auto_20190623_1925.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0006_auto_20190623_1925.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0007_auto_20190623_1926.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0007_auto_20190623_1926.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0008_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0008_admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0009_inbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0009_inbox.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0010_auto_20190709_1851.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0010_auto_20190709_1851.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0011_auto_20190709_1853.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0011_auto_20190709_1853.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0012_auto_20190710_0018.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0012_auto_20190710_0018.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0013_auto_20190710_1300.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0013_auto_20190710_1300.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0014_remove_tourist_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0014_remove_tourist_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0015_tourist_user_name.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0015_tourist_user_name.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0016_auto_20190723_2207.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0016_auto_20190723_2207.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0017_auto_20190724_0538.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0017_auto_20190724_0538.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0018_auto_20190724_0621.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0018_auto_20190724_0621.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0019_placesuggestion_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0019_placesuggestion_environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0020_remove_placesuggestion_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0020_remove_placesuggestion_environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0021_placesuggestion_average_rating.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0021_placesuggestion_average_rating.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0022_remove_placesuggestion_average_rating.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0022_remove_placesuggestion_average_rating.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0023_place_aveage_rating.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0023_place_aveage_rating.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0024_auto_20190913_2013.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0024_auto_20190913_2013.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/migrations/0025_auto_20190913_2022.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/migrations/0025_auto_20190913_2022.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Places/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Places/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurants/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurants/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurants/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurants/migrations/0002_food.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants/migrations/0002_food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurants/migrations/0003_foodatrestaurants.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants/migrations/0003_foodatrestaurants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurants/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurants/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Restaurants/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transportations/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transportations/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transportations/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transportations/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transportations/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transportations/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transportations/migrations/0002_standtostandcommunication.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transportations/migrations/0002_standtostandcommunication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transportations/migrations/0003_auto_20190910_2044.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transportations/migrations/0003_auto_20190910_2044.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transportations/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transportations/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transportations/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transportations/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transportations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transportations/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelers_Guide/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Travelers_Guide/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Travelers_Guide/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Travelers_Guide/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Travelers_Guide/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Travelers_Guide/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/css/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/css/util.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/js/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/animate/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/animate/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/bootstrap/js/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/select2/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/select2/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_inbox/vendor/select2/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_inbox/vendor/select2/select2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/css/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/css/util.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/fonts/montserrat/OFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/fonts/montserrat/OFL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/animate/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/animate/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/animsition/css/animsition.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/animsition/css/animsition.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/animsition/css/animsition.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/animsition/css/animsition.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/animsition/js/animsition.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/animsition/js/animsition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/animsition/js/animsition.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/animsition/js/animsition.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/bootstrap/js/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/countdowntime/countdowntime.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/countdowntime/countdowntime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/css-hamburgers/hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/daterangepicker/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/daterangepicker/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/daterangepicker/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/daterangepicker/moment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/daterangepicker/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/daterangepicker/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/select2/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/select2/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin_login/vendor/select2/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin_login/vendor/select2/select2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/css/jquery.mb.YTPlayer.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/css/jquery.mb.YTPlayer.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/css/jquery.mb.vimeo_player.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/css/jquery.mb.vimeo_player.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/js/plugins/animate-headline.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/js/plugins/animate-headline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/js/plugins/jquery.mb.YTPlayer.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/js/plugins/jquery.mb.YTPlayer.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/js/plugins/jquery.mb.vimeo_player.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/js/plugins/jquery.mb.vimeo_player.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/js/plugins/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/js/plugins/slick.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/js/vendor/jquery-1.12.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/js/vendor/jquery-1.12.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/project_home/assets/js/vendor/modernizr-2.8.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/project_home/assets/js/vendor/modernizr-2.8.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/route/Control.Geocoder.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/route/Control.Geocoder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/route/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/route/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/route/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/route/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/route/leaflet-routing-machine.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/route/leaflet-routing-machine.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/route/leaflet-routing-machine.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/route/leaflet-routing-machine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/transportation_css/fdw-demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/transportation_css/fdw-demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/transportation_css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/transportation_css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/css/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/css/util.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/JosefinSans/OFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/JosefinSans/OFL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/iconic/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/iconic/css/material-design-iconic-font.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/fonts/source-sans-pro/OFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/fonts/source-sans-pro/OFL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/js/map-custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/js/map-custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/animate/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/animate/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/animsition/css/animsition.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/animsition/css/animsition.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/animsition/css/animsition.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/animsition/css/animsition.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/animsition/js/animsition.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/animsition/js/animsition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/animsition/js/animsition.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/animsition/js/animsition.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/bootstrap/js/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/countdowntime/countdowntime.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/countdowntime/countdowntime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/css-hamburgers/hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/daterangepicker/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/daterangepicker/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/daterangepicker/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/daterangepicker/moment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/daterangepicker/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/daterangepicker/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/select2/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/select2/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_contact/vendor/select2/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_contact/vendor/select2/select2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home/js/extention/choices.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home/js/extention/choices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home/js/extention/custom-materialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home/js/extention/custom-materialize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home/js/extention/flatpickr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home/js/extention/flatpickr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/js/global.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/bootstrap-wizard/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/bootstrap-wizard/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/bootstrap-wizard/jquery.bootstrap.wizard.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/bootstrap-wizard/jquery.bootstrap.wizard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/bootstrap-wizard/jquery.bootstrap.wizard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/bootstrap-wizard/jquery.bootstrap.wizard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/datepicker/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/datepicker/daterangepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/datepicker/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/datepicker/daterangepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/datepicker/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/datepicker/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/font-awesome-4.7/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/font-awesome-4.7/HELP-US-OUT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/font-awesome-4.7/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/font-awesome-4.7/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/font-awesome-4.7/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/font-awesome-4.7/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/font-awesome-4.7/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/jquery-validate/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/jquery-validate/jquery.validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/jquery-validate/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/jquery-validate/jquery.validate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/mdi-font/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/mdi-font/css/material-design-iconic-font.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/mdi-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_home2/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_home2/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/css/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/css/util.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/fonts/montserrat/OFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/fonts/montserrat/OFL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/animate/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/animate/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/animsition/css/animsition.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/animsition/css/animsition.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/animsition/css/animsition.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/animsition/css/animsition.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/animsition/js/animsition.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/animsition/js/animsition.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/animsition/js/animsition.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/animsition/js/animsition.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/popper.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/popper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/bootstrap/js/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/countdowntime/countdowntime.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/countdowntime/countdowntime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/css-hamburgers/hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/daterangepicker/daterangepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/daterangepicker/daterangepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/daterangepicker/daterangepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/daterangepicker/daterangepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/daterangepicker/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/daterangepicker/moment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/daterangepicker/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/daterangepicker/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/perfect-scrollbar/perfect-scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/perfect-scrollbar/perfect-scrollbar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/select2/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/select2/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/select2/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/select2/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_login/vendor/select2/select2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_login/vendor/select2/select2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/fonts/material-icon/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/fonts/material-icon/css/material-design-iconic-font.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/fonts/material-icon/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/fonts/material-icon/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/fonts/roboto-slab/roboto-slab-v7-latin-300.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/fonts/roboto-slab/roboto-slab-v7-latin-300.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/fonts/roboto-slab/roboto-slab-v7-latin-700.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/fonts/roboto-slab/roboto-slab-v7-latin-700.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/fonts/roboto-slab/roboto-slab-v7-latin-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/fonts/roboto-slab/roboto-slab-v7-latin-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/scss/common/extend.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/scss/common/extend.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/scss/common/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/scss/common/fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/scss/common/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/scss/common/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/scss/common/minxi.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/scss/common/minxi.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/scss/common/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/scss/common/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/scss/layouts/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/scss/layouts/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/scss/layouts/responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/scss/layouts/responsive.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/vendor/jquery/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/vendor/jquery/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/user_signup/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/user_signup/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_action_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_action_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_inbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_login_again.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_login_again.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_place_suggestion.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_place_suggestion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/food_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/food_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/not_found.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/not_found.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/place_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/place_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/places.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/places.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project_home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project_home_slide.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project_home_slide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/restaurants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/restaurants_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/restaurants_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/review_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/review_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/suggest_place.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/suggest_place.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/temp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/transportation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/transportation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/transportation_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/transportation_result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_add_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_add_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_add_email_used.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_add_email_used.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_add_password_mismatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_add_password_mismatch.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_contact_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_contact_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_home2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_home_places.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home_places.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_home_restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home_restaurants.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_login_again.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_login_again.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_login_continue.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_login_continue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile_edit.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -425,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Travelers_Guide/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
+            <state relative-caret-position="167">
+              <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="29" />
               <folding>
                 <element signature="e#639#671#0" expanded="true" />
               </folding>
@@ -437,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Places/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="307" column="22" selection-start-line="307" selection-start-column="22" selection-end-line="307" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="530" column="38" selection-start-line="530" selection-start-column="38" selection-end-line="530" selection-end-column="38" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -447,10 +41,68 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Places/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1452">
+              <caret line="75" column="12" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/profile_edit_confirm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="79" column="31" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/profile_edit_again.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/user_add_confirm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="81" column="63" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/review_confirm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="6" selection-end-line="123" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/profile_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-935">
-              <caret line="116" column="42" lean-forward="true" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+            <state relative-caret-position="273">
+              <caret line="90" column="31" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -460,26 +112,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/about.html">
+        <entry file="file://$PROJECT_DIR$/templates/user_home_places.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="90" column="52" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
+            <state relative-caret-position="2090">
+              <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/project_home_slide.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -487,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/user_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
+            <state relative-caret-position="1936">
               <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -495,42 +136,6 @@
                 <element signature="n#style#0;n#td#0;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2074">
-              <caret line="122" column="44" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="44" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/user_login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Places/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="75" column="12" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -547,10 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>forgot</find>
-      <find>Django</find>
-      <find>django</find>
-      <find>.bu</find>
       <find>table_data</find>
       <find>Admin</find>
       <find>place_details</find>
@@ -576,7 +177,11 @@
       <find>global</find>
       <find>User_Id</find>
       <find>get</find>
+      <find>&lt;hr&gt;</find>
       <find>place_global</find>
+      <find>user</find>
+      <find>redir</find>
+      <find>BA</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -586,8 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/contrib/admin/sites.py" />
-        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/django/contrib/admin/templates/registration/logged_out.html" />
         <option value="$PROJECT_DIR$/templates/user_contact_confirm.html" />
         <option value="$PROJECT_DIR$/templates/user_contact.html" />
         <option value="$PROJECT_DIR$/templates/admin_inbox.html" />
@@ -631,16 +234,18 @@
         <option value="$PROJECT_DIR$/templates/user_home_places.html" />
         <option value="$PROJECT_DIR$/templates/user_home_restaurants.html" />
         <option value="$PROJECT_DIR$/templates/profile.html" />
-        <option value="$PROJECT_DIR$/Travelers_Guide/urls.py" />
         <option value="$PROJECT_DIR$/templates/user_home.html" />
         <option value="$PROJECT_DIR$/templates/about.html" />
         <option value="$PROJECT_DIR$/templates/project_home_slide.html" />
+        <option value="$PROJECT_DIR$/Travelers_Guide/urls.py" />
+        <option value="$PROJECT_DIR$/templates/profile_edit_again.html" />
+        <option value="$PROJECT_DIR$/templates/profile_edit_confirm.html" />
         <option value="$PROJECT_DIR$/templates/profile_edit.html" />
         <option value="$PROJECT_DIR$/Places/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="790" />
@@ -651,7 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -688,6 +292,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
@@ -695,7 +300,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="Settings.Markdown" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -726,7 +331,7 @@
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21664464" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21664464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -740,7 +345,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49925596" visible="true" weight="0.42538354" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49925596" visible="true" weight="0.27475592" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50074404" side_tool="true" weight="0.25531915" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32914925" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -752,18 +357,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/Django-2.2.2-py3.7.egg/django/contrib/admin/templates/admin/base.html" />
-    <entry file="file://$PROJECT_DIR$/templates/admin_inbox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/Django-2.2.2-py3.7.egg/django/contrib/admin/sites.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/Django-2.2.2-py3.7.egg/django/contrib/admin/templates/admin/base_site.html" />
     <entry file="file://$PROJECT_DIR$/Travelers_Guide/settings.py">
@@ -861,13 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_add_confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/user_add_email_used.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -901,13 +487,6 @@
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="32" column="64" lean-forward="true" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -1024,16 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/review_confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/suggest_place.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1084,18 +653,6 @@
         <state relative-caret-position="-1423" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_home_places.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="76" column="81" selection-start-line="76" selection-start-column="81" selection-end-line="76" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/user_home_restaurants.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -1115,39 +672,16 @@
         <state relative-caret-position="-289" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Travelers_Guide/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="55" column="62" selection-start-line="55" selection-start-column="62" selection-end-line="55" selection-end-column="62" />
-          <folding>
-            <element signature="e#639#671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/project_home_slide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
+        <state>
           <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
+        <state>
           <caret line="122" column="44" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1159,7 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/user_login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state>
           <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1170,7 +704,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="-7">
           <caret line="90" column="52" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1182,10 +716,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="70" column="39" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/review_confirm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="6" selection-end-line="123" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_home_places.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1936">
+          <caret line="88" column="57" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#1;n#tr#0;n#form#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/profile_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-935">
-          <caret line="116" column="42" lean-forward="true" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
+        <state relative-caret-position="273">
+          <caret line="90" column="31" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1195,15 +771,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Places/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="1452">
           <caret line="75" column="12" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Travelers_Guide/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="55" column="10" lean-forward="true" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="29" />
+          <folding>
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/profile_edit_again.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user_add_confirm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="81" column="63" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/profile_edit_confirm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="79" column="31" selection-start-line="79" selection-start-column="29" selection-end-line="79" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Places/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="307" column="22" selection-start-line="307" selection-start-column="22" selection-end-line="307" selection-end-column="22" />
+        <state relative-caret-position="180">
+          <caret line="530" column="38" selection-start-line="530" selection-start-column="38" selection-end-line="530" selection-end-column="38" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
