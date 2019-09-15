@@ -301,7 +301,9 @@ def submit_place_review(request, *args, **kwargs):
             else:
                 avg_rating = 0
 
-            obj = Place.objects.get(place_id=data.place_id)
+
+            print(place_global)
+            obj = Place.objects.get(place_id=place_global.place_id)
             obj.average_rating = avg_rating
             obj.save()
 
@@ -488,9 +490,17 @@ def user_profile(request, *args, **kwargs):
 def user_profile_edit_page_show(request, *args, **kwargs):
     if request.user.is_authenticated:
         user_ = Tourist.objects.get(user_name=request.user)
+        i = {
+            'tourist': user_,
+        }
 
         print(user_.tourist_id)
-        return HttpResponse("OK")
+        return render(request, "profile_edit.html", i)
 
     else :
         return render(request, "user_login_continue.html", {})
+
+
+def about(request, *args, **kwargs):
+    return render(request, "about.html", {})
+

@@ -19,7 +19,7 @@ from django import urls
 
 from Places.views import admin_login, admin_verification_1, admin_verification_2,  project_home, user_login, user_contact
 from Places.views import contact_confirm, admin_inbox, user_home, user_signup, user_add, user_places, place_details, submit_place_review, suggest_place, admin_place_review
-from Places.views import place_suggestion_info, admin_place_review_action, user_home_places, user_profile, user_profile_edit_page_show
+from Places.views import place_suggestion_info, admin_place_review_action, user_home_places, user_profile, user_profile_edit_page_show,about
 
 from Restaurants.views import restaurants_details,user_food, user_home_restaurants
 from Restaurants.views import user_restaurants
@@ -54,5 +54,6 @@ urlpatterns = [
     path('user/home/transportation/details/', transportation_result, name='transportationresult'),
     path('user/home/profile/', user_profile, name='userprofile'),
     path('user/home/profile/edit', user_profile_edit_page_show, name='userprofileedit'),
+    path('about/', about, name='about'),
 
 ]

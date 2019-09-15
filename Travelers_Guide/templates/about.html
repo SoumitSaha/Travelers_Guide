@@ -16,12 +16,12 @@
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-	
+
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
 	<style type="text/css">
 		html, body { width:100%;}
-		.container { 
+		.container {
 			width:85%;
 			height: 350px;
 		}
@@ -29,19 +29,7 @@
 		#map { width:100%;height:100%;padding:0;margin:0; }
 		.address { cursor:pointer }
 		.address:hover { color:#AA0000 }
-        .b_class{
-	        background-color: Transparent;
-            background-repeat:no-repeat;
-            border: none;
-            cursor:pointer;
-            overflow: hidden;
-            outline:none;
-            font-size:25px;
-            color: #000000;
-        }
-        .b_class:focus {
-            outline:none;
-        }
+
 	</style>
 </head>
 <body>
@@ -71,7 +59,7 @@
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-					
+
                     <ul class="nav navbar-nav ml-auto"><li class="nav-item"><a href="{% url 'userhome' %}"><b style="font-size:25px">TRAVELER'S GUIDE</b></a></li></ul>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -97,26 +85,17 @@
             </nav>
 
 
-            <table class="table">
-		        <tr>
-			        <th colspan="4">Top Rated Places</th>
-		        </tr>
-		        {% for places in top_places %}
-                <form action="{% url 'placedetails' %}" method='POST'>{% csrf_token %}
-		        <tr>
-			        <td align="left" style="width: 25%">
-				        <img src={{ places.sample_pic }} id="image" alt="just nothing" height = "100" width="190">
-			        </td>
-                    <td><a style="font-size:25px; color:#000000"><b><button class="b_class">{{ places.name }}</button></b></a><a style="font-size:20px; color:#000000"><br>{{ places.category }}<br>Rating : &nbsp{{ places.average_rating }}/5.0</th>
+            <a style="font-size:20px;"> <h2 style="color:#4467A0;">  Are you finding some nearby places to visit?  </h2>
+                <h4 style="color:#45A6B2;"> Are you finding any good restaurants near you where you can find your desired food ? </h4>
+                <br>
+                Then you are in <b>right place! </b>
+                <br><br>
+                You need to provide your location to help us. We will provide information of some nice places and restaurants near you. You can also
+                know how you can travel to that site/restaurant by public transport.
 
-			        <!-- <td border=3 height=100 width=100><img width="150" height="100" src = {{ food.pic }}></th>  -->
-		        </tr>
-                    <input type="hidden" name="table_data" value={{ places.place_id }} />
-                </form>
-                {% endfor %}
-            </table>
-
-
+                <br><br><br>
+                For further query, please contact with us.
+               </a>
 
 		</div>
 	</div>
