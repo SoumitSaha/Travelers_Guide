@@ -470,3 +470,27 @@ def admin_place_review_action(request, *args, **kwargs):
                 'msg': "Place Discarded."
             }
         return render(request, "admin_action_confirm.html", j)
+
+
+
+def user_profile(request, *args, **kwargs):
+    if request.user.is_authenticated:
+        user_ = Tourist.objects.get(user_name=request.user.username)
+        i ={
+            'tourist': user_,
+        }
+        return render(request, "profile.html", i)
+
+    else :
+        return render(request, "user_login_continue.html", {})
+
+
+def user_profile_edit_page_show(request, *args, **kwargs):
+    if request.user.is_authenticated:
+        user_ = Tourist.objects.get(user_name=request.user)
+
+        print(user_.tourist_id)
+        return HttpResponse("OK")
+
+    else :
+        return render(request, "user_login_continue.html", {})
