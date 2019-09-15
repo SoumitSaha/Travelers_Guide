@@ -56,7 +56,11 @@ def user_restaurants(request, *args, **kwargs):
                 has_places = 1
                 break
         if has_places == 0:
-            return HttpResponse("Sorry , we couldn't find any nearby restaurants")
+            message_ = "Sorry , we couldn't find any nearby restaurants."
+            k = {
+                'msg': message_,
+            }
+            return render(request, "not_found.html", k)
         j = {
             'place_number': restaurant,
             'my_loc_gps_x': Lat,
@@ -126,7 +130,11 @@ def user_food(request, *args, **kwargs):
                 has_places = 1
                 break
         if has_places == 0:
-            return HttpResponse("Sorry , we couldn't find any nearby restaurants")
+            message_ = "Sorry , we couldn't find any nearby restaurants with your searched food."
+            k = {
+                'msg': message_,
+            }
+            return render(request, "not_found.html", k)
 
         Food_Id = Food.objects.filter(name=food_name)
         cursor = connection.cursor()

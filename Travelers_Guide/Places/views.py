@@ -33,9 +33,6 @@ def project_home(request, *args, **kwargs):
 
 
 def contact_confirm(request, *args, **kwargs):
-    if request.method == 'GET':
-        return HttpResponse("hi")
-
     if request.method == 'POST':
         Name = request.POST.get("name", "")
         Email = request.POST.get("email", "")
@@ -183,7 +180,11 @@ def user_places(request, *args, **kwargs):
                 has_places = 1
                 break
         if has_places == 0:
-            return HttpResponse("Sorry , we couldn't find any nearby places")
+            message_ = "Sorry , we couldn't find any nearby places."
+            k = {
+                'msg' : message_,
+            }
+            return render(request, "not_found.html", k)
         j = {
             'place_number': place,
             'my_loc_gps_x': Lat,

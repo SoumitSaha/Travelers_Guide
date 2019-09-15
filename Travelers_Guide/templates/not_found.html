@@ -42,7 +42,7 @@
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="{% url 'userhomeplaces' %}" style="background-color: #FFFFFF ;color: #7386D5;">Nearby places</a>
+                    <a href="{% url 'userhomeplaces' %}">Nearby places</a>
                 </li>
                 <li>
                     <a href="{% url 'userhomerestaurants' %}">Restaurants</a>
@@ -83,115 +83,9 @@
                     </div>
                 </div>
             </nav>
-	
-	
-	
-	
-	
-	
-			<div class="container">
-				<b> Please provide your location</b>
-				<div id="search">
-					<input class="form-control form-control-md" type="text" name="addr" value="" id="addr" size="58" style="width: 50%;" /><br>
-					<button type="button" onclick="addr_search();" class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 100px">Search</button>
-					<div id="results"></div>
-				</div>
-				<br>
-				<!--<b>Coordinates</b>-->
-					<form action="{% url 'userplaces' %}" method='POST'>{% csrf_token %}
-					<input type="hidden" name="lat" id="lat" size=12 value="">
-					<input type="hidden" name="lon" id="lon" size=12 value="">
-					<!--<br><br>-->
-					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Places</button>
-				</form>
-				
-				<br />
 
-				<div id="map"></div>
-				<br />
-			</div>
+			<a style="color: #FF0000;">{{ msg }}</a>
 		</div>
-
-		<script type="text/javascript">
-
-			//Dhaka Lalbag
-			var startlat = 23.721951;
-			var startlon = 90.387815;
-
-
-			var options = {
-				center: [startlat, startlon],
-				zoom: 12
-			}
-
-			document.getElementById('lat').value = startlat;
-			document.getElementById('lon').value = startlon;
-
-			var map = L.map('map', options);
-			var nzoom = 12;
-
-			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: 'OSM'}).addTo(map);
-
-			var myMarker = L.marker([startlat, startlon], {title: "Coordinates", alt: "Coordinates", draggable: true}).addTo(map).on('dragend', function() {
-				var lat = myMarker.getLatLng().lat.toFixed(8);
-				var lon = myMarker.getLatLng().lng.toFixed(8);
-
-
-				var czoom = map.getZoom();
-				map.setView([lat,lon], czoom);
-				document.getElementById('lat').value = lat;
-				document.getElementById('lon').value = lon;
-
-				// myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
-			});
-
-			function chooseAddr(lat1, lng1){
-				myMarker.closePopup();
-				map.setView([lat1, lng1],14);
-				myMarker.setLatLng([lat1, lng1]);
-				lat = lat1.toFixed(8);
-				lon = lng1.toFixed(8);
-
-
-				document.getElementById('lat').value = lat;
-				document.getElementById('lon').value = lon;
-
-				//myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
-			}
-
-			function myFunction(arr){
-				var out = "<br />";
-				var i;
-
-				if(arr.length > 0){
-					for(i = 0; i < arr.length; i++){
-						out += "<div class='address' title='Show Location and Coordinates' onclick='chooseAddr(" + arr[i].lat + ", " + arr[i].lon + ");return false;'>" + arr[i].display_name + "</div>";
-					}
-					out += "<br /> "
-					document.getElementById('results').innerHTML = out;
-				}
-				else{
-					document.getElementById('results').innerHTML = "Sorry, no results...";
-				}
-
-			}
-
-			function addr_search(){
-				var inp = document.getElementById("addr");
-				var xmlhttp = new XMLHttpRequest();
-				var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + inp.value;
-				xmlhttp.onreadystatechange = function(){
-					if (this.readyState == 4 && this.status == 200){
-						var myArr = JSON.parse(this.responseText);
-						myFunction(myArr);
-					}
-				};
-				xmlhttp.open("GET", url, true);
-				xmlhttp.send();
-			}
-		</script>
-
-
 	</div>
 </body>
 </html>

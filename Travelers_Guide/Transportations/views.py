@@ -66,7 +66,11 @@ def transportation_result(request, *args, **kwargs):
                 has_stand_near_dst = 1
                 break
         if has_stand_near_dst ==0 or has_stand_near_src == 0:
-             return HttpResponse("Sorry no stands near your source or destination")
+            message_ = "Sorry no stands near your source or destination."
+            k = {
+                'msg': message_,
+            }
+            return render(request, "not_found.html", k)
 
         else:
              source_stand_name = stand_src_obj[0].stand_name
@@ -92,7 +96,3 @@ def transportation_result(request, *args, **kwargs):
              }
              print("accha")
              return render(request, "transportation_result.html", j)
-
-
-
-        #return HttpResponse("hu")

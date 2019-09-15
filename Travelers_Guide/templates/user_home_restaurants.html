@@ -97,10 +97,10 @@
 					<div id="results"></div>
 				</div>
 				<br>
-				<b>Coordinates</b>
+				<!--<b>Coordinates</b>-->
 				<form action="{% url 'userplaces' %}" method='POST'>{% csrf_token %}
-					<input type="text" name="lat" id="lat" size=12 value="">
-					<input type="text" name="lon" id="lon" size=12 value="">
+					<input type="hidden" name="lat" id="lat" size=12 value="">
+					<input type="hidden" name="lon" id="lon" size=12 value="">
 				</form>
 				<form action="{% url 'userrestaurants' %}" method='POST'>{% csrf_token %}
 					<input type="hidden" name="lat2" id="lat2" size=12 value="">
