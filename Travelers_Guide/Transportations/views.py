@@ -22,7 +22,11 @@ def namedtuplefetchall(cursor):
     return [nt_result(*row) for row in cursor.fetchall()]
 
 def user_transportation(request, *args, **kwargs):
-    return render(request, "transportation.html", {})
+    if request.user.is_authenticated:
+        return render(request, "transportation.html", {})
+    else:
+        return redirect('/user/login/')
+
 
 def transportation_result(request, *args, **kwargs):
     if request.method == 'POST':
@@ -96,3 +100,6 @@ def transportation_result(request, *args, **kwargs):
              }
              print("accha")
              return render(request, "transportation_result.html", j)
+
+    else:
+        return redirect('/user/login/')

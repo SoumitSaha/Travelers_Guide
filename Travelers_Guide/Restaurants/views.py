@@ -29,7 +29,11 @@ def namedtuplefetchall(cursor):
 
 
 def user_home_restaurants(request, *args, **kwargs):
-    return render(request, "user_home_restaurants.html", {})
+    if request.user.is_authenticated:
+        return render(request, "user_home_restaurants.html", {})
+    else:
+        return redirect('/user/login/')
+
 
 def user_restaurants(request, *args, **kwargs):
     print(request.method)
@@ -103,6 +107,9 @@ def restaurants_details(request, *args, **kwargs):
         }
         return render(request, "restaurants_details.html", j)
 
+    else:
+        return redirect('/user/login/')
+
 
 def user_food(request, *args, **kwargs):
     if request.method == 'POST':
@@ -151,6 +158,9 @@ def user_food(request, *args, **kwargs):
             'food_name' : food_name,
         }
         return render(request, "food_search.html", j)
+
+    else:
+        return redirect('/user/login/')
 
 
 

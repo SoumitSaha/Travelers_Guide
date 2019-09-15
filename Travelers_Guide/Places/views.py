@@ -41,6 +41,9 @@ def contact_confirm(request, *args, **kwargs):
         i.save()
         return render(request, "user_contact_confirm.html", {})
 
+    else:
+        return redirect('/user/login/')
+
 
 def admin_login(request, *args, **kwargs):
     return render(request, "admin_login.html", {})
@@ -106,7 +109,10 @@ def user_signup(request, *args, **kwargs):
 
 
 def user_home_places(request, *args, **kwargs):
-    return render(request, "user_home_places.html", {})
+    if request.user.is_authenticated:
+        return render(request, "user_home_places.html", {})
+    else:
+        return redirect('/user/login/')
 
 
 def user_home(request, *args, **kwargs):
@@ -231,6 +237,10 @@ def place_details(request, *args, **kwargs):
         }
         return render(request, "place_details.html", j)
 
+    else:
+        return redirect('/user/login/')
+
+
 
 def user_add(request, *args, **kwargs):
     if request.method == 'POST':
@@ -273,6 +283,9 @@ def user_add(request, *args, **kwargs):
             print('innnn')
             print(found.count())
             return render(request, "user_add_email_used.html", {})
+
+    else:
+        return redirect('/user/login/')
 
 
 def submit_place_review(request, *args, **kwargs):
@@ -339,9 +352,16 @@ def submit_place_review(request, *args, **kwargs):
             }
             return render(request, "review_confirm.html", j)
 
+    else:
+        return redirect('/user/login/')
+
 
 def suggest_place(request, *args, **kwargs):
-    return render(request, "suggest_place.html", {})
+    if request.user.is_authenticated:
+        return render(request, "suggest_place.html", {})
+    else:
+        return redirect('/user/login/')
+
 
 
 def place_suggestion_info(request, *args, **kwargs):
@@ -416,6 +436,12 @@ def place_suggestion_info(request, *args, **kwargs):
                     'msg': "Your suggestion has been received. Thank You"
                 }
             return render(request, "review_confirm.html", j)
+
+    else:
+        return redirect('/user/login/')
+
+
+
 
 
 def admin_place_review(request, *args, **kwargs):
