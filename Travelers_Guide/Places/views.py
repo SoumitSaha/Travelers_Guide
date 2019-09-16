@@ -123,9 +123,9 @@ def user_home(request, *args, **kwargs):
         user = authenticate(request, username=Username, password=Password)
         # if user.count() != 0:
         if user is not None:
-            global User_Id
-            User_Id = Tourist.objects.get(user_name=Username)
-            print(User_Id.tourist_id)
+
+            #User_Id = Tourist.objects.get(user_name=request.user)
+            #print(User_Id.tourist_id)
             login(request, user)
 
             cursor = connection.cursor()
@@ -210,7 +210,7 @@ def place_details(request, *args, **kwargs):
     if request.method == 'POST':
         print(request.POST.get("table_data", ""))
         global place_global
-        global User_Id
+
         Place_Id = request.POST.get("table_data", "")
         place = Place.objects.filter(place_id=Place_Id)
         place_global = Place.objects.get(place_id=Place_Id)
@@ -293,12 +293,12 @@ def submit_place_review(request, *args, **kwargs):
         Rating = request.POST.get("rating", "")
         Comment = request.POST.get("comment", "")
         global place_global
-        global User_Id
-        Name = Tourist.objects.get(tourist_id=User_Id.tourist_id)
+
+        Name = Tourist.objects.get(user_name=request.user)
         print(Name.name)
-        found = PlaceReview.objects.filter(Q(tourist_id=User_Id), Q(place_id=place_global))
+        found = PlaceReview.objects.filter(Q(tourist_id=Name), Q(place_id=place_global))
         if found.count() == 0:
-            i = PlaceReview(place_id=place_global, tourist_id=User_Id, tourist_name=Name.name, rating=Rating,
+            i = PlaceReview(place_id=place_global, tourist_id=Name, tourist_name=Name.name, rating=Rating,
                             comment=Comment)
             i.save()
 
@@ -326,7 +326,7 @@ def submit_place_review(request, *args, **kwargs):
             }
             return render(request, "review_confirm.html", j)
         else:
-            i = PlaceReview.objects.get(tourist_id=User_Id, place_id=place_global)
+            i = PlaceReview.objects.get(tourist_id=Name, place_id=place_global)
             i.rating = Rating
             i.comment = Comment
             i.save()
