@@ -96,12 +96,14 @@
 				</div>
 				<br>
 				<!--<b>Coordinates</b>-->
-					<form action="{% url 'userplaces' %}" method='POST'>{% csrf_token %}
+                <form action="{% url 'userplaces' %}" method='POST'>{% csrf_token %}
 					<input type="hidden" name="lat" id="lat" size=12 value="">
 					<input type="hidden" name="lon" id="lon" size=12 value="">
 					<!--<br><br>-->
-					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Places</button>
-				</form>
+                    <div id="search_place_btn">
+					    <!--<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Places</button>-->
+                    </div>
+                </form>
 				
 				<br />
 
@@ -140,6 +142,9 @@
 				document.getElementById('lat').value = lat;
 				document.getElementById('lon').value = lon;
 
+				var out="<button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 285px\">Show Nearby Places</button>";
+				document.getElementById('search_place_btn').innerHTML = out;
+
 				// myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
 			});
 
@@ -153,6 +158,9 @@
 
 				document.getElementById('lat').value = lat;
 				document.getElementById('lon').value = lon;
+
+				var out="<button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 285px\">Show Nearby Places</button>";
+				document.getElementById('search_place_btn').innerHTML = out;
 
 				//myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
 			}
@@ -187,6 +195,8 @@
 				xmlhttp.open("GET", url, true);
 				xmlhttp.send();
 			}
+
+
 		</script>
 
 
