@@ -100,7 +100,7 @@
 			        <th colspan="4">Top Rated Places</th>
 		        </tr>
 		        {% for places in top_places %}
-                <form action="{% url 'placedetails' %}" method='POST'>{% csrf_token %}
+                <form action="{% url 'placedetailswithoutroute' %}" method='POST'>{% csrf_token %}
 		        <tr>
 			        <td align="left" style="width: 25%">
 				        <img src={{ places.sample_pic }} id="image" alt="just nothing" height = "100" width="190">

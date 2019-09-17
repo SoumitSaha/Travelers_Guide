@@ -111,6 +111,40 @@ def restaurants_details(request, *args, **kwargs):
         return redirect('/user/login/')
 
 
+
+
+def restaurants_details_without_route(request, *args, **kwargs):
+    if request.method == 'POST':
+
+        print(request.POST.get("table_data", ""))
+        global restaurant_global
+        global User_Id
+        Restaurant_Id = request.POST.get("table_data", "")
+        restaurant = Restaurant.objects.filter(restaurant_id=Restaurant_Id)
+        restaurant_global = Restaurant.objects.get(restaurant_id=Restaurant_Id)
+        cursor = connection.cursor()
+        cursor.execute("SELECT * FROM Foods JOIN (SELECT FR.food_id_id AS 'foodid', FR.price as 'price', "
+                       "FR.sample_pic as 'pic' FROM Foods_At_Restaurants FR JOIN Restaurants R ON "
+                       "(R.restaurant_id = FR.restaurant_id_id) "
+                       "WHERE restaurant_id =%s) T ON (T.foodid = Foods.food_id)", [int(Restaurant_Id)])
+        foods_ = namedtuplefetchall(cursor)
+
+        global Lat
+        global Lon
+
+        j = {
+            'food_number': foods_,
+            'place_number': restaurant,
+            'my_loc_gps_x': restaurant_global.gps_x,
+            'my_loc_gps_y': restaurant_global.gps_y
+        }
+        return render(request, "restaurants_details_wr.html", j)
+
+    else:
+        return redirect('/user/login/')
+
+
+
 def user_food(request, *args, **kwargs):
     if request.method == 'POST':
         food_name = request.POST.get("food", "")

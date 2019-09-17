@@ -40,19 +40,7 @@
 		#map { width:100%;height:100%;padding:0;margin:0; }
 		.address { cursor:pointer }
 		.address:hover { color:#AA0000 }
-		.b_class{
-	        background-color: Transparent;
-            background-repeat:no-repeat;
-            border: none;
-            cursor:pointer;
-            overflow: hidden;
-            outline:none;
-            font-size:25px;
-            color: #000000;
-        }
-        .b_class:focus {
-            outline:none;
-        }
+
 	</style>
 </head>
 <body>
@@ -65,10 +53,10 @@
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="{% url 'userhomeplaces' %}">Nearby places</a>
+                    <a href="{% url 'userhomeplaces' %}" style="background-color: #FFFFFF ;color: #7386D5;">Nearby places</a>
                 </li>
                 <li>
-                    <a href="{% url 'userhomerestaurants' %}" style="background-color: #FFFFFF ;color: #7386D5;">Restaurants</a>
+                    <a href="{% url 'userhomerestaurants' %}">Restaurants</a>
                 </li>
                 <li>
                     <a href="{% url 'usertransportation' %}">Transportation</a>
@@ -109,37 +97,87 @@
 
 
 
-			<div class ="container">
-	<table class="table" align="center">
-		<thead class="thead-dark">
-		<tr>
-			<th colspan="4">Search Result</th>
-		</tr>
-		</thead>
-		{% for food in food_number %}
-		<form action="{% url 'restaurantsdetailswithoutroute' %}" method='POST'>{% csrf_token %}
-		<tr>
-			<td align="right" style="width: 25%">
-				<img src={{ food.sample_pic }} id="image" height = "100" width="150">
-			</td>
-			<input type="hidden" name="table_data" value={{ food.restaurant_id }} />
-			<td colspan="2" style="font-size: 15px" align="center"><b><button class="b_class"> {{ food.name }}</button></b><br>
-				{{ food_name }}<br>
-				{{ food.description }}
-			</th>
-			<td colspan="2" style="font-size: 28px" align="center">
-				<b>{{ food.price }}/-</b>
-			</th>
-		</tr>
-			</form>
-		{% endfor %}
-	</table>
 
-<input type="hidden" name="lat" id="lat" size=12 value="">
-<input type="hidden" name="lon" id="lon" size=12 value="">
-<div id="map"></div>
-<br />
+
+
+
+
+
+			{% for place in place_number %}
+<div class="container">
+	<input type="hidden" name="lat" id="lat" size=12 value="">
+	<input type="hidden" name="lon" id="lon" size=12 value="">
+	<br>
+	<center>
+		<a> <h1 style="color:#7386D5 ;font-size:45px"><b>{{ place.name }}</b></h1> </a>
+		<a style="font-size:20px"> Tourist Rating : {{ place.average_rating }}/5.0 </a><br><br>
+	</center>
+
+	<div class="row">
+		<div class="column">
+			<img src = {{ place.sample_pic }} style="width: 100%; height: 200px padding: 10px">
+
+		</div>
+
+		<div class="column">
+			<div class="right_side">
+				<br><br><br><br>
+				<form action="{% url 'submitplacereview' %}" method='POST'>{% csrf_token %}
+				<a style="font-size:20px; color:#000000">Rating : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+				<select name="rating" id="Render" class="browser-default custom-select" style="width:250px; height:30px">
+					<!-- <option slected value="">Gender</option> -->
+					<option value="1">★☆☆☆☆</option>
+					<option value="2">★★☆☆☆</option>
+					<option value="3">★★★☆☆</option>
+					<option value="4">★★★★☆</option>
+					<option value="5">★★★★★</option>
+				</select>
+				<br><br>
+				<div class="form-group shadow-textarea">
+  					<a style="font-size:20px; color:#000000">Comment : </a><br>
+  					<textarea class="form-control z-depth-1" id="comment" name="comment" rows="3" placeholder="Write something here..."></textarea>
+				</div>
+				<br>
+					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 150px"> Submit </button><br> <br> <br> <br>
+				</form>
+			</div>
+		</div>
 	</div>
+	{% endfor %}
+
+	<div id="map"></div>
+	<br />
+	<br> <br> <br> <br>
+
+	<table class="table">
+		<thead class="thead-dark">
+			<tr>
+				<th>Reviewer</th>
+				<th>Rating</th>
+				<th>Feedback</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for review in review_number %}
+			<tr>
+				<td>{{ review.tourist_name }}</td>
+				<td>{{ review.rating }}</td>
+				<td>{{ review.comment }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<br> <br>
+</div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -151,20 +189,14 @@
 		</div>
 	</div>
 
-
-
-
-
-
-
-	<script type="text/javascript">
+<script type="text/javascript">
 var options = {
- center: [{{ my_loc_gps_x }}, {{ my_loc_gps_y }}],
+ center: [{{ gps_x }}, {{ gps_y }}],
  zoom: 12
 }
 
-document.getElementById('lat').value = {{ my_loc_gps_x }};
-document.getElementById('lon').value = {{ my_loc_gps_y }};
+document.getElementById('lat').value = {{ gps_x }};
+document.getElementById('lon').value = {{ gps_y }};
 
 var map = L.map('map', options);
 var nzoom = 16;
@@ -180,7 +212,7 @@ var redIcon = new L.Icon({
   shadowSize: [41, 41]
 });
 
-var myMarker1 = L.marker([{{ my_loc_gps_x }}, {{ my_loc_gps_y }}], {title: "Coordinates", alt: "Coordinates", draggable: false, icon: redIcon}).addTo(map).on('dragend', function() {
+var myMarker1 = L.marker([{{ gps_x }}, {{ gps_y }}], {title: "Coordinates", alt: "Coordinates", draggable: false, icon: redIcon}).addTo(map).on('dragend', function() {
  var lat1 = myMarker1.getLatLng().lat.toFixed(8);
  var lon1 = myMarker1.getLatLng().lng.toFixed(8);
  var czoom = map.getZoom();
@@ -191,22 +223,6 @@ var myMarker1 = L.marker([{{ my_loc_gps_x }}, {{ my_loc_gps_y }}], {title: "Coor
  //document.getElementById('lon').value = lon1;
  myMarker1.bindPopup("My location").openPopup();
 });
-
-//var mymarker = [];
-var i;
- {% for place in food_number %}
- var myMarker = L.marker([{{ place.gps_x }}, {{ place.gps_y }}], {title: "Coordinates", alt: "Coordinates", draggable: false}).addTo(map).on('dragend', function() {
- var lat = myMarker.getLatLng().lat.toFixed(8);
- var lon = myMarker.getLatLng().lng.toFixed(8);
- var czoom = map.getZoom();
- if(czoom < 16) { nzoom = czoom + 2; }
- if(nzoom > 16) { nzoom = 16; }
- if(czoom != 16) { map.setView([lat,lon], nzoom); } else { map.setView([lat,lon]); }
- //document.getElementById('lat').value = lat;
- //document.getElementById('lon').value = lon;
- //myMarker.bindPopup( "Lat " + {{ place.name }}).openPopup();
-});
-{% endfor %}
 
 
 

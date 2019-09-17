@@ -20,9 +20,9 @@ from django import urls
 from Places.views import admin_login, admin_verification_1, admin_verification_2,  project_home, user_login, user_contact
 from Places.views import contact_confirm, admin_inbox, user_home, user_signup, user_add, user_places, place_details, submit_place_review, suggest_place, admin_place_review
 from Places.views import place_suggestion_info, admin_place_review_action, user_home_places, user_profile, user_profile_edit_page_show,about
-from Places.views import profile_edit_confirm
+from Places.views import profile_edit_confirm, place_details_without_route
 
-from Restaurants.views import restaurants_details,user_food, user_home_restaurants
+from Restaurants.views import restaurants_details,user_food, user_home_restaurants, restaurants_details_without_route
 from Restaurants.views import user_restaurants
 
 from Transportations.views import user_transportation,transportation_result
@@ -46,7 +46,9 @@ urlpatterns = [
     path('user/signup/', user_signup, name='usersignup'),
     path('user/signup/done/', user_add, name='useradd'),
     path('user/home/places/details/', place_details, name='placedetails'),
+    path('user/home/places/details/wr', place_details_without_route, name='placedetailswithoutroute'),
     path('user/home/restaurants/details/', restaurants_details, name='restaurantsdetails'),
+    path('user/home/restaurants/details/wr', restaurants_details_without_route, name='restaurantsdetailswithoutroute'),
     path('user/home/places/details/review/', submit_place_review, name='submitplacereview'),
     path('user/home/placesuggest/validate/', place_suggestion_info, name='placesuggestion'),
     path('user/home/restaurants/', user_restaurants, name='userrestaurants'),

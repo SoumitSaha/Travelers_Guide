@@ -241,6 +241,38 @@ def place_details(request, *args, **kwargs):
         return redirect('/user/login/')
 
 
+def place_details_without_route(request, *args, **kwargs):
+    if request.method == 'POST':
+        print(request.POST.get("table_data", ""))
+        global place_global
+
+        Place_Id = request.POST.get("table_data", "")
+        place = Place.objects.filter(place_id=Place_Id)
+        place_global = Place.objects.get(place_id=Place_Id)
+        data = PlaceReview.objects.filter(place_id=place_global)
+        rating_sum = 0
+        count = 0
+        for i in data:
+            rating_sum += int(i.rating)
+            count += 1
+
+        if count != 0:
+            avg_rating = rating_sum / count
+        else:
+            avg_rating = 0
+
+        j = {
+            'avg_rat': avg_rating,
+            'place_number': place,
+            'review_number': data,
+            'gps_x' : place_global.gps_x,
+            'gps_y' : place_global.gps_y
+        }
+        return render(request, "place_details_wr.html", j)
+
+    else:
+        return redirect('/user/login/')
+
 
 def user_add(request, *args, **kwargs):
     if request.method == 'POST':

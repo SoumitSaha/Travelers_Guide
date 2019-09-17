@@ -103,7 +103,8 @@
 				<form action="{% url 'userrestaurants' %}" method='POST'>{% csrf_token %}
 					<input type="hidden" name="lat2" id="lat2" size=12 value="">
 					<input type="hidden" name="lon2" id="lon2" size=12 value="">
-					<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Restaurants</button>
+                    <div id="near_res"></div>
+					<!--<button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 285px">Show Nearby Restaurants</button>-->
 				</form>
 				<form action="{% url 'userfood' %}" method='POST'>{% csrf_token %}
 					<input type="hidden" name="lat3" id="lat3" size=12 value="">
@@ -168,6 +169,9 @@
 				document.getElementById('lat3').value = lat3;
 				document.getElementById('lon3').value = lon3;
 
+				var out="<button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 285px\">Show Nearby Restaurants</button><br>";
+				document.getElementById('near_res').innerHTML = out;
+
 				// myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
 			});
 
@@ -187,6 +191,9 @@
 
 				document.getElementById('lat3').value = lat;
 				document.getElementById('lon3').value = lon;
+
+				var out="<button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 285px\">Show Nearby Restaurants</button><br>";
+				document.getElementById('near_res').innerHTML = out;
 				//myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
 			}
 
