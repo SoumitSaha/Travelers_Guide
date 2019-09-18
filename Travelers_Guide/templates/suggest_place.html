@@ -126,7 +126,9 @@
                             <td>Sample Pic Url:</td> <td><input type="text" name="sample_pic" id="sample_pic" size=12 value="" required /></td>
                         </tr>
                     </table>
-                    <br> <button class="btn btn-primary btn-md" style="background-color:#7386D5 ;width: 200px">Suggest this place</button> </a>
+                    <div id="button_">
+
+                    </div>
                 </form>
                 <br>
             </div>
@@ -167,6 +169,8 @@ var myMarker = L.marker([startlat, startlon], {title: "Coordinates", alt: "Coord
  map.setView([lat,lon], czoom);
  document.getElementById('lat').value = lat;
  document.getElementById('lon').value = lon;
+ var out="<br> <button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 200px\">Suggest this place</button>";
+ document.getElementById('button_').innerHTML = out;
 // myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
 });
 
@@ -179,6 +183,9 @@ function chooseAddr(lat1, lng1)
  lon = lng1.toFixed(8);
  document.getElementById('lat').value = lat;
  document.getElementById('lon').value = lon;
+
+ var out="<br> <button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 200px\">Suggest this place</button>";
+ document.getElementById('button_').innerHTML = out;
  //myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
 }
 
