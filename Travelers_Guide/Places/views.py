@@ -1,20 +1,15 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponseRedirect
-from django.http import HttpResponse
-from django.contrib.auth import authenticate, login, logout
-from django import forms
 from django.db.models import Q
 from math import sin, cos, sqrt, atan2, radians
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.db import IntegrityError, connection
 from django.views.decorators.cache import cache_control
-from django.contrib.auth.decorators import login_required
 from collections import namedtuple
 
-from Restaurants.views import user_restaurants, wraper
+from Restaurants.views import user_restaurants
 
-from .models import Admin, PlaceReview, Verification, Tourist, Location, Place, Inbox, PlaceSuggestion
+from .models import Admin, PlaceReview, Tourist, Location, Place, Inbox, PlaceSuggestion
 
 Lat = 0
 Lon = 0
@@ -53,8 +48,6 @@ def admin_verification_2(request, *args, **kwargs):
     if request.method == 'POST':
         Username = request.POST.get("username", "")
         Password = request.POST.get("pass", "")
-        print(Username)
-        print(Password)
         user = authenticate(request, username=Username, password=Password)
         if user is not None:
             return redirect('/admin/default')
@@ -69,7 +62,6 @@ def admin_verification_1(request, *args, **kwargs):
     if request.method == 'POST':
         Username = request.POST.get("username", "")
         Password = request.POST.get("pass", "")
-        # user = authenticate(request, username=Username, password=Password)
         counter = Admin.objects.filter(email=Username, password=Password)
 
         if counter.count() != 0:
@@ -119,26 +111,17 @@ def user_home(request, *args, **kwargs):
     if request.method == 'POST':
         Username = request.POST.get("username", "")
         Password = request.POST.get("pass", "")
-        # counter = Tourist.objects.filter(email=Email, password=Password)
         user = authenticate(request, username=Username, password=Password)
-        # if user.count() != 0:
         if user is not None:
-
-            #User_Id = Tourist.objects.get(user_name=request.user)
-            #print(User_Id.tourist_id)
             login(request, user)
 
             cursor = connection.cursor()
             cursor.execute("SELECT * FROM Places WHERE average_rating>=3.0")
             t_places = namedtuplefetchall(cursor)
-
             j = {
 
                 'top_places': t_places,
             }
-
-
-            print(t_places)
             return render(request, "user_home.html", j)
         else:
             return render(request, "user_login_again.html", {})
@@ -153,7 +136,6 @@ def user_home(request, *args, **kwargs):
 
                 'top_places': t_places,
             }
-            print(t_places)
             return render(request, "user_home.html", j)
         else:
             return render(request, "user_login_continue.html", {})
@@ -196,7 +178,6 @@ def user_places(request, *args, **kwargs):
             'my_loc_gps_x': Lat,
             'my_loc_gps_y': Lon,
         }
-        print(j)
         return render(request, "places.html", j)
 
     else:
@@ -208,7 +189,6 @@ def user_places(request, *args, **kwargs):
 
 def place_details(request, *args, **kwargs):
     if request.method == 'POST':
-        print(request.POST.get("table_data", ""))
         global place_global
 
         Place_Id = request.POST.get("table_data", "")
@@ -243,7 +223,6 @@ def place_details(request, *args, **kwargs):
 
 def place_details_without_route(request, *args, **kwargs):
     if request.method == 'POST':
-        print(request.POST.get("table_data", ""))
         global place_global
 
         Place_Id = request.POST.get("table_data", "")
@@ -291,29 +270,19 @@ def user_add(request, *args, **kwargs):
 
         if found.count() == 0 & found1.count() == 0:
             try:
-                print('in')
-                print(found.count())
                 user = User.objects.create_user(User_Name, Email, Password)
                 i = Tourist(name=Name, user_name=User_Name, nationality=Nationality, passport_no=Passport, email=Email,
                             gender=Gender, )
                 i.save()
-                print('before save')
                 user.save()
-                print('after save')
                 return render(request, "user_add_confirm.html", {})
 
             except IntegrityError as e:
-                print('dhukce ekhane')
-
-                # if 'unique constraint' in e.args[0]:
-                print('ho, ekhane')
                 return render(request, "user_add_email_used.html", {})
 
 
 
         else:
-            print('innnn')
-            print(found.count())
             return render(request, "user_add_email_used.html", {})
 
     else:
@@ -327,7 +296,6 @@ def submit_place_review(request, *args, **kwargs):
         global place_global
 
         Name = Tourist.objects.get(user_name=request.user)
-        print(Name.name)
         found = PlaceReview.objects.filter(Q(tourist_id=Name), Q(place_id=place_global))
         if found.count() == 0:
             i = PlaceReview(place_id=place_global, tourist_id=Name, tourist_name=Name.name, rating=Rating,
@@ -346,8 +314,6 @@ def submit_place_review(request, *args, **kwargs):
             else:
                 avg_rating = 0
 
-
-            print(place_global)
             obj = Place.objects.get(place_id=place_global.place_id)
             obj.average_rating = avg_rating
             obj.save()
@@ -378,7 +344,6 @@ def submit_place_review(request, *args, **kwargs):
             obj = Place.objects.get(place_id=place_global.place_id)
             obj.average_rating = avg_rating
             obj.save()
-            print(obj.average_rating)
             j = {
                 'msg': "Your review has been updated"
             }
@@ -407,14 +372,12 @@ def place_suggestion_info(request, *args, **kwargs):
         OffDay = request.POST.get("offday", "")
         Sample_Pic = request.POST.get("sample_pic", "")
 
-        print(GPS_X)
-        print(GPS_Y)
-        print(Place_info)
         lat1 = radians(float(GPS_X))
         lon1 = radians(float(GPS_Y))
         R = 6373.0
         Data = Location.objects.all()
         has_location = 0
+        loc_id = 0
         for i in Data:
             lat2 = radians(float(i.gps_x))
             lon2 = radians(float(i.gps_y))
@@ -425,7 +388,6 @@ def place_suggestion_info(request, *args, **kwargs):
 
             distance = R * c
 
-            loc_id = 0
             if distance <= 1:
                 location = Location.objects.get(location_id=i.location_id)
                 loc_id = int(location.location_id)
@@ -437,10 +399,10 @@ def place_suggestion_info(request, *args, **kwargs):
             }
             return render(request, "review_confirm.html", j)
         else:
+            already_in_place = 0
             if loc_id != 0:
                 places = Place.objects.filter(location_id=loc_id)
-                print(places.values('gps_x'))
-                already_in_place=0
+
                 for k in places:
                     lat2 = radians(float(k.gps_x))
                     lon2 = radians(float(k.gps_y))
@@ -515,8 +477,6 @@ def admin_place_review_action(request, *args, **kwargs):
                               sample_pic=Pic_url)
             i.save()
             save = 1
-            print("i saver")
-            print(i)
 
         data = PlaceSuggestion.objects.get(Q(gps_x=X), Q(gps_y=Y))
         data.delete()
@@ -551,8 +511,6 @@ def user_profile_edit_page_show(request, *args, **kwargs):
         i = {
             'tourist': user_,
         }
-
-        print(user_.tourist_id)
         return render(request, "profile_edit.html", i)
 
     else :
@@ -592,8 +550,6 @@ def profile_edit_confirm(request, *args, **kwargs):
             user.save()
 
             return render(request, "profile_edit_confirm.html", {})
-
-
 
     else:
         return redirect('/user/home/profile/')

@@ -1,18 +1,8 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponseRedirect
-from django.http import HttpResponse
-from django.contrib.auth import authenticate, login, logout
-from django import forms
-from django.db.models import Q
 from math import sin, cos, sqrt, atan2, radians
-from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login, logout
-from django.db import IntegrityError, connection
-from django.views.decorators.cache import cache_control
-from django.contrib.auth.decorators import login_required
-
-from Places.models import Location, Tourist
-from Transportations.models import Stand,PublicTransport
+from django.db import connection
+from Places.models import Location
+from Transportations.models import Stand
 from collections import namedtuple
 
 
@@ -79,7 +69,6 @@ def transportation_result(request, *args, **kwargs):
         else:
              source_stand_name = stand_src_obj[0].stand_name
              dst_stand_name = stand_dst_obj[0].stand_name
-             print(source_stand_name)
 
              source_stand_name_appended = '%' + source_stand_name
              dst_stand_name_appended = '%' + dst_stand_name + '%'
@@ -91,14 +80,12 @@ def transportation_result(request, *args, **kwargs):
              cursor = connection.cursor()
              cursor.execute("SELECT * FROM PublicTransports where route like %s or route like %s",[source_dst_appended, dst_source_apppended])
              bus_name = namedtuplefetchall(cursor)
-             print(bus_name)
 
              j = {
                  'bus_number': bus_name,
                  'source_stand': source_stand_name,
                  'dst_stand': dst_stand_name
              }
-             print("accha")
              return render(request, "transportation_result.html", j)
 
     else:

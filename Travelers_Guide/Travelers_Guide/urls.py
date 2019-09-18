@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django import urls
 
-from Places.views import admin_login, admin_verification_1, admin_verification_2,  project_home, user_login, user_contact
+from Places.views import admin_login, admin_verification_1,  project_home, user_login, user_contact
 from Places.views import contact_confirm, admin_inbox, user_home, user_signup, user_add, user_places, place_details, submit_place_review, suggest_place, admin_place_review
 from Places.views import place_suggestion_info, admin_place_review_action, user_home_places, user_profile, user_profile_edit_page_show,about
 from Places.views import profile_edit_confirm, place_details_without_route

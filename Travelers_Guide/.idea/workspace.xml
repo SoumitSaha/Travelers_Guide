@@ -2,14 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="798334f6-2f40-449e-885f-6e47f94397be" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Travelers_Guide.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Travelers_Guide.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Places/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Places/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Restaurants/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Restaurants/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Transportations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Transportations/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Travelers_Guide/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Travelers_Guide/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/food_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/food_search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/not_found.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/not_found.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/place_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/place_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/place_details_wr.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/place_details_wr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/places.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/places.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile_edit_again.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile_edit_again.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile_edit_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile_edit_confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project_home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/restaurants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/restaurants_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/restaurants_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/restaurants_details_wr.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/restaurants_details_wr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/review_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/review_confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/suggest_place.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/suggest_place.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/transportation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/transportation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/transportation_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/transportation_result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_add_email_used.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_add_email_used.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_add_password_mismatch.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_add_password_mismatch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_contact_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_contact_confirm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user_home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_home_places.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home_places.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user_home_restaurants.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_home_restaurants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_login_again.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_login_again.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_login_continue.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_login_continue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user_signup.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,40 +52,6 @@
         <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>place_details</find>
-      <find>for</find>
-      <find>OK</find>
-      <find>mybutton</find>
-      <find>redi</find>
-      <find>document</find>
-      <find>results</find>
-      <find>avg_rat</find>
-      <find>review_number</find>
-      <find>lat2</find>
-      <find>place_n</find>
-      <find>placesuggestion</find>
-      <find>place_suggestion_</find>
-      <find>tra</find>
-      <find>navbar</find>
-      <find>right</find>
-      <find>search</find>
-      <find>map</find>
-      <find>transportation</find>
-      <find>Httpresponse</find>
-      <find>global</find>
-      <find>get</find>
-      <find>&lt;hr&gt;</find>
-      <find>place_global</find>
-      <find>user</find>
-      <find>redir</find>
-      <find>BA</find>
-      <find>user_home_places</find>
-      <find>suggest_place</find>
-      <find>User_Id</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -75,7 +69,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/Places/views.py" />
   </component>
   <component name="RunDashboard">
@@ -105,7 +99,9 @@
       <workItem from="1568675541468" duration="80000" />
       <workItem from="1568693108689" duration="1305000" />
       <workItem from="1568747002777" duration="1738000" />
-      <workItem from="1568749097960" duration="978000" />
+      <workItem from="1568749097960" duration="1101000" />
+      <workItem from="1568750222931" duration="23000" />
+      <workItem from="1568773695541" duration="3488000" />
     </task>
     <servers />
   </component>

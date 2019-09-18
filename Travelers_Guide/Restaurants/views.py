@@ -1,26 +1,10 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponseRedirect
-from django.http import HttpResponse
-from django.contrib.auth import authenticate, login, logout
-from django import forms
-from django.db.models import Q
 from math import sin, cos, sqrt, atan2, radians
-from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login, logout
-from django.db import IntegrityError, connection
-from django.views.decorators.cache import cache_control
-from django.contrib.auth.decorators import login_required
-
-from Restaurants.models import Restaurant, FoodAtRestaurants, Food
+from django.db import connection
+from Restaurants.models import Restaurant, Food
 from Places.models import Location, Tourist
 from collections import namedtuple
 
-
-def wraper(request, *args, **kwargs):
-    return redirect(request, '/user/home/restaurants')
-
-def wraper2(request, *args, **kwargs):
-    return redirect(request, '/user/home/userfood')
 
 def namedtuplefetchall(cursor):
     desc = cursor.description
@@ -36,7 +20,6 @@ def user_home_restaurants(request, *args, **kwargs):
 
 
 def user_restaurants(request, *args, **kwargs):
-    print(request.method)
     if request.method == 'POST':
         global Lat
         global Lon
@@ -70,7 +53,6 @@ def user_restaurants(request, *args, **kwargs):
             'my_loc_gps_x': Lat,
             'my_loc_gps_y': Lon,
         }
-        print(j)
         return render(request, "restaurants.html", j)
 
     else:
@@ -82,8 +64,6 @@ def user_restaurants(request, *args, **kwargs):
 
 def restaurants_details(request, *args, **kwargs):
     if request.method == 'POST':
-
-        print(request.POST.get("table_data", ""))
         global restaurant_global
         global User_Id
         Restaurant_Id = request.POST.get("table_data", "")
@@ -115,8 +95,6 @@ def restaurants_details(request, *args, **kwargs):
 
 def restaurants_details_without_route(request, *args, **kwargs):
     if request.method == 'POST':
-
-        print(request.POST.get("table_data", ""))
         global restaurant_global
         global User_Id
         Restaurant_Id = request.POST.get("table_data", "")
@@ -152,7 +130,6 @@ def user_food(request, *args, **kwargs):
         global Lon
         Lat = request.POST.get("lat3", "")
         Lon = request.POST.get("lon3", "")
-        print(Lat)
         lat1 = radians(float(Lat))
         lon1 = radians(float(Lon))
         R = 6373.0
