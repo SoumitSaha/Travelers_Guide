@@ -169,7 +169,7 @@
 				document.getElementById('lat3').value = lat3;
 				document.getElementById('lon3').value = lon3;
 
-				var out="<button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 285px\">Show Nearby Restaurants</button><br>";
+				var out="<button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 285px\">Show Nearby Restaurants</button>";
 				document.getElementById('near_res').innerHTML = out;
 
 				// myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
@@ -192,7 +192,7 @@
 				document.getElementById('lat3').value = lat;
 				document.getElementById('lon3').value = lon;
 
-				var out="<button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 285px\">Show Nearby Restaurants</button><br>";
+				var out="<button class=\"btn btn-primary btn-md\" style=\"background-color:#7386D5 ;width: 285px\">Show Nearby Restaurants</button>";
 				document.getElementById('near_res').innerHTML = out;
 				//myMarker.bindPopup("Lat " + lat + "<br />Lon " + lon).openPopup();
 			}
@@ -205,7 +205,6 @@
 					for(i = 0; i < arr.length; i++){
 						out += "<div class='address' title='Show Location and Coordinates' onclick='chooseAddr(" + arr[i].lat + ", " + arr[i].lon + ");return false;'>" + arr[i].display_name + "</div>";
 					}
-					out += "<br /> "
 					document.getElementById('results').innerHTML = out;
 				}
 				else{

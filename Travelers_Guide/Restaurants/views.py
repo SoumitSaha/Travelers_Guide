@@ -155,11 +155,12 @@ def user_food(request, *args, **kwargs):
             return render(request, "not_found.html", k)
 
         Food_Id = Food.objects.filter(name=food_name)
+        searched_food = '%' + food_name + '%'
         cursor = connection.cursor()
         cursor.execute("SELECT * FROM Restaurants JOIN (SELECT * FROM Foods_At_Restaurants JOIN "
-                       "(SELECT food_id, category, description FROM Foods WHERE name = %s) T ON "
+                       "(SELECT food_id, category, description, name as N FROM Foods WHERE name LIKE %s) T ON "
                        "(T.food_id = Foods_At_Restaurants.food_id_id))"
-                       " Q On (Q.restaurant_id_id = Restaurants.restaurant_id)", [food_name])
+                       " Q On (Q.restaurant_id_id = Restaurants.restaurant_id)", [searched_food])
         foods_ = namedtuplefetchall(cursor)
 
         j = {

@@ -119,16 +119,16 @@
 		{% for food in food_number %}
 		<form action="{% url 'restaurantsdetailswithoutroute' %}" method='POST'>{% csrf_token %}
 		<tr>
-			<td align="right" style="width: 25%">
-				<img src={{ food.sample_pic }} id="image" height = "100" width="150">
+			<td align="left" style="width: 25%">
+				<img src={{ food.sample_pic }} id="image" height = "100" width="170">
 			</td>
 			<input type="hidden" name="table_data" value={{ food.restaurant_id }} />
-			<td colspan="2" style="font-size: 15px" align="center"><b><button class="b_class"> {{ food.name }}</button></b><br>
-				{{ food_name }}<br>
+			<td colspan="2" style="font-size: 20px" align="center"><b><button class="b_class"> {{ food.name }}</button></b><br>
+				{{ food.N }}<br>
 				{{ food.description }}
 			</th>
-			<td colspan="2" style="font-size: 28px" align="center">
-				<b>{{ food.price }}/-</b>
+			<td colspan="2" style="font-size: 25px" align="right">
+				<br><b>{{ food.price }}/-</b>
 			</th>
 		</tr>
 			</form>
@@ -180,31 +180,13 @@ var redIcon = new L.Icon({
   shadowSize: [41, 41]
 });
 
-var myMarker1 = L.marker([{{ my_loc_gps_x }}, {{ my_loc_gps_y }}], {title: "Coordinates", alt: "Coordinates", draggable: false, icon: redIcon}).addTo(map).on('dragend', function() {
- var lat1 = myMarker1.getLatLng().lat.toFixed(8);
- var lon1 = myMarker1.getLatLng().lng.toFixed(8);
- var czoom = map.getZoom();
- if(czoom < 16) { nzoom = czoom + 2; }
- if(nzoom > 16) { nzoom = 16; }
- if(czoom != 16) { map.setView([lat1,lon1], nzoom); } else { map.setView([lat1,lon1]); }
- //document.getElementById('lat').value = lat1;
- //document.getElementById('lon').value = lon1;
- myMarker1.bindPopup("My location").openPopup();
-});
-
 //var mymarker = [];
 var i;
  {% for place in food_number %}
  var myMarker = L.marker([{{ place.gps_x }}, {{ place.gps_y }}], {title: "Coordinates", alt: "Coordinates", draggable: false}).addTo(map).on('dragend', function() {
  var lat = myMarker.getLatLng().lat.toFixed(8);
  var lon = myMarker.getLatLng().lng.toFixed(8);
- var czoom = map.getZoom();
- if(czoom < 16) { nzoom = czoom + 2; }
- if(nzoom > 16) { nzoom = 16; }
- if(czoom != 16) { map.setView([lat,lon], nzoom); } else { map.setView([lat,lon]); }
- //document.getElementById('lat').value = lat;
- //document.getElementById('lon').value = lon;
- //myMarker.bindPopup( "Lat " + {{ place.name }}).openPopup();
+ map.setView([lat,lon], 18);
 });
 {% endfor %}
 
