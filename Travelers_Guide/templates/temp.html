@@ -30,12 +30,14 @@ background-image: url("https://www.transparenttextures.com/patterns/light-mesh.p
 <body>
 <center>
 <h2> Welcome {{ Name }}, you are logged in as admin. </h2>
+	<a style="align: center; color: #FF0000; font-size: 20px">Notification : &nbsp {{ msg }}</a>
 </center>
 	<div class="container">
 		<a type="button" href="default" class="button">Database</a>
 		<a type="button" href="{% url 'admininbox' %}" class="button">Inbox</a>
 		<a type="button" href="{% url 'adminplacereview' %}" class="button">Place review</a>
 		<a type="button" href="{% url 'adminlogin' %}" class="button">Log Out</a>
+		<br><br><br><br>
 	</div>
 </div>
 </body>
